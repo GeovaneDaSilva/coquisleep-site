@@ -1,0 +1,1497 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CoquiSleep — Cuentos y canciones para dormir</title>
+<meta name="description" content="Cuentos narrados y canciones de cuna en español, inglés y portugués. Sin cuenta, sin contraseña: le das play y ya.">
+<meta name="keywords" content="cuentos para dormir, canciones de cuna, historias infantiles en español, bedtime stories, cuentos para niños, app de cuentos, rutina de sueño para niños, coquí, cuentos en español inglés portugués">
+<meta name="robots" content="index, follow">
+<meta name="language" content="es">
+<link rel="canonical" href="https://coquisleep.app/">
+<meta name="theme-color" content="#1B1640">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"CoquiSleep","description":"Cuentos narrados y canciones de cuna en español, inglés y portugués. Sin cuenta, sin contraseña.","url":"https://coquisleep.app/","operatingSystem":"Android, iOS","applicationCategory":"LifestyleApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CoquiSleep">
+<meta property="og:url" content="https://coquisleep.app/">
+<meta property="og:title" content="CoquiSleep — Cuentos y canciones para dormir">
+<meta property="og:description" content="Cuentos narrados y canciones de cuna en español, inglés y portugués. Sin cuenta, sin contraseña: le das play y ya.">
+<meta property="og:image" content="https://coquisleep.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CoquiSleep — Cuentos y canciones para dormir">
+<meta name="twitter:description" content="Cuentos narrados y canciones de cuna en español, inglés y portugués. Sin cuenta, sin contraseña: le das play y ya.">
+<meta name="twitter:image" content="https://coquisleep.app/og-image.png">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-top:#1B1640; --bg-bottom:#0E0B22;
+    --surface:#241E44; --surface-raised:#2E2755; --line:rgba(255,255,255,.10);
+    --lavender:#9B8CFF; --lavender-soft:#C3B9FF; --turquoise:#5FD9C7; --moon-gold:#FFD98A;
+    --coral:#FF6F59; --coral-strong:#E5503B; --coral-hover:#CE402D;
+    --coqui-green:#3ECF8E; --coqui-green-deep:#219A66;
+    --text-primary:#F3F1FB; --text-secondary:#B5AEDD; --text-muted:#9992C7;
+    --font-display:'Fredoka',system-ui,sans-serif; --font-body:'Nunito',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-bottom) 55%,#0A0819 100%) fixed;
+    color:var(--text-primary); font-family:var(--font-body); padding-inline:20px;
+  }
+  h1,h2,h3{font-family:var(--font-display); text-wrap:balance; margin:0;}
+  .wrap{max-width:1100px; margin:0 auto;}
+  p{line-height:1.6;}
+  svg#brand-defs{position:absolute; width:0; height:0; overflow:hidden;}
+  ::selection{background:var(--coral-strong); color:#fff;}
+  ::-webkit-scrollbar{width:10px; height:10px;}
+  ::-webkit-scrollbar-track{background:var(--bg-bottom);}
+  ::-webkit-scrollbar-thumb{background:var(--surface-raised); border-radius:999px;}
+  html{scrollbar-color:var(--surface-raised) var(--bg-bottom);}
+  a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-visible{outline:2px solid var(--turquoise); outline-offset:2px;}
+  .reveal{opacity:0; transform:translateY(16px); transition:opacity .5s ease, transform .5s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    #mp, #cp, #mp *, #cp *, .hero::before, .wave-row span{ animation: none; }
+  }
+
+  header.topbar{position:sticky; top:0; z-index:20; display:flex; align-items:center; justify-content:space-between; padding-block:20px; background:transparent; border-bottom:1px solid transparent; transition:background-color .2s, border-color .2s;}
+  header.topbar.scrolled{background:rgba(14,11,34,.85); backdrop-filter:blur(10px); border-color:var(--line); margin-inline:-20px; padding-inline:20px;}
+  .logo{display:flex; align-items:center; gap:10px;}
+  .logo svg{width:34px;height:34px;}
+  .logo span{font-family:var(--font-display); font-weight:600; font-size:19px;}
+  .logo .co{color:var(--coral);} .logo .sl{color:var(--lavender-soft);}
+  .lang-chip{display:flex; gap:6px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:5px; font-size:12px; font-weight:800;}
+  .lang-chip button{all:unset; cursor:pointer; padding:5px 12px; border-radius:999px; color:var(--text-muted); font-family:inherit; font-size:inherit; font-weight:inherit;}
+  .lang-chip button.on{background:var(--coral-strong); color:#fff;}
+
+  .hero{padding-block:56px 40px; position:relative; text-align:left; overflow:hidden;}
+  .hero::before{content:"";position:absolute; top:-60px; right:-10%; width:70%; height:420px;
+    background:radial-gradient(ellipse 60% 100% at 70% 0%, rgba(255,217,138,.18), transparent 70%); pointer-events:none; z-index:0;}
+  .hero-inner{position:relative; z-index:1; display:flex; gap:48px; align-items:center; flex-wrap:wrap;}
+  .hero-copy{flex:1 1 420px; min-width:280px;}
+  .badge{display:inline-flex; align-items:center; gap:8px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font-size:12px; font-weight:800; color:var(--turquoise); margin-bottom:18px;}
+  .badge svg{width:14px;height:14px;}
+  .hero h1{font-size:clamp(32px,5vw,52px); font-weight:600; line-height:1.06;}
+  .hero h1 .accent{color:var(--coral);}
+  .hero p.sub{color:var(--text-secondary); font-size:18px; max-width:46ch; margin-top:18px;}
+  .cta-row{display:flex; gap:14px; flex-wrap:wrap; margin-top:22px; align-items:center;}
+  .store-btn{display:flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:12px 20px; color:var(--text-primary); text-decoration:none; font-weight:700; font-size:14px; min-height:44px; position:relative; opacity:.4; cursor:default;}
+  .store-btn .small{display:block; font-size:10px; color:var(--text-muted); font-weight:600;}
+  .store-btn svg{width:20px;height:20px;flex:none;}
+  .soon-tag{background:var(--moon-gold); color:#3A2A00; font-size:9.5px; font-weight:800; letter-spacing:.03em; padding:4px 10px; border-radius:999px; align-self:center;}
+  .trust-row{display:flex; gap:22px; flex-wrap:wrap; margin-top:24px; font-size:13px; color:var(--text-muted);}
+  .trust-row span{display:flex; align-items:center; gap:6px;}
+  .trust-row svg{width:15px;height:15px; color:var(--turquoise);}
+
+  .hero-art{flex:1 1 300px; min-width:260px; display:flex; justify-content:center;}
+  .hero-stage{width:min(100%,340px); aspect-ratio:1; border-radius:32px; position:relative;
+    background:radial-gradient(ellipse 70% 90% at 50% 15%, rgba(255,217,138,.22), transparent 65%), linear-gradient(150deg,var(--surface),var(--bg-bottom));
+    border:1px solid var(--line); display:flex; align-items:center; justify-content:center; overflow:hidden;}
+  .hero-stage svg{width:56%;}
+
+  section{padding-block:52px; border-top:1px solid var(--line);}
+  .eyebrow{font-family:var(--font-body); font-weight:800; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--turquoise); margin:0 0 10px;}
+  section h2{font-size:clamp(24px,3.4vw,34px); font-weight:600;}
+  section p.lede{color:var(--text-secondary); font-size:16px; max-width:60ch; margin-top:12px;}
+
+  .value-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:34px;}
+  @media (max-width:860px){.value-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:480px){.value-grid{grid-template-columns:1fr;}}
+  .value-card{background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:22px; transition:transform .2s, border-color .2s, box-shadow .2s;}
+  .value-card:hover{transform:translateY(-3px); border-color:rgba(255,255,255,.2); box-shadow:0 10px 24px rgba(0,0,0,.25);}
+  .value-card .ic{width:38px;height:38px; border-radius:11px; background:var(--surface-raised); display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
+  .value-card .ic svg{width:20px;height:20px; color:var(--coral);}
+  .value-card h3{font-size:15px; font-weight:800; font-family:var(--font-body); margin-bottom:6px;}
+  .value-card p{font-size:13px; color:var(--text-muted); margin:0; line-height:1.5;}
+
+  .story-section{display:flex; gap:48px; align-items:center; flex-wrap:wrap;}
+  .story-art{flex:1 1 260px; min-width:220px; display:flex; justify-content:center;}
+  .story-art svg{width:70%; max-width:220px;}
+  .story-copy{flex:2 1 380px; min-width:280px;}
+  .story-copy p{color:var(--text-secondary); font-size:16px; max-width:58ch;}
+  .story-quote{margin-top:20px; padding-left:18px; border-left:3px solid var(--coral); font-family:var(--font-display); font-size:19px; color:var(--text-primary); font-weight:500;}
+
+  /* catalog */
+  .cat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px;}
+  @media (max-width:860px){.cat-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.cat-grid{grid-template-columns:1fr;}}
+  .cat-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px; display:none; transition:transform .2s, border-color .2s, box-shadow .2s;}
+  .cat-card.show{display:block;}
+  .cat-card:hover{transform:translateY(-3px); border-color:rgba(255,255,255,.2); box-shadow:0 10px 24px rgba(0,0,0,.25);}
+  .cat-card .cat-ic{display:block; margin-bottom:10px;}
+  .cat-card .kind{font-size:10px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; color:var(--moon-gold);}
+  .cat-card h3{font-size:15.5px; font-weight:700; margin-top:6px; line-height:1.3;}
+  .cat-card p{font-size:13px; color:var(--text-muted); margin-top:8px; line-height:1.55;}
+  .catalog-count{margin-top:18px; font-size:13px; color:var(--text-muted);}
+  .catalog-count strong{color:var(--moon-gold); font-family:var(--font-display); font-size:16px;}
+
+  /* sound design */
+  #sound{position:relative; overflow:hidden;}
+  #sound::before{content:""; position:absolute; top:-40px; left:-15%; width:60%; height:360px;
+    background:radial-gradient(ellipse 60% 100% at 30% 0%, rgba(95,217,199,.12), transparent 70%); pointer-events:none; z-index:0;}
+  #sound > *{position:relative; z-index:1;}
+  .wave-row{display:flex; align-items:flex-end; gap:4px; height:64px; margin:26px 0; opacity:.85;}
+  .wave-row span{flex:1; background:linear-gradient(180deg,var(--turquoise),var(--lavender)); border-radius:3px; min-width:3px;}
+
+  /* ===== Coquí mascot animations (#mp = moon-perch, #cp = story portrait) ===== */
+  #mp, #cp{
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: coqui-breathe 4.4s ease-in-out infinite;
+  }
+  #mp circle:nth-of-type(n+4):nth-of-type(-n+9),
+  #cp circle:nth-of-type(n+5):nth-of-type(-n+10){
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: coqui-blink 5.4s ease-in-out infinite;
+  }
+  #mp ellipse:nth-of-type(4),
+  #cp circle:nth-of-type(2){
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: coqui-throat 6s ease-out infinite;
+  }
+  @keyframes coqui-breathe{
+    0%, 100%{ transform: translateY(0) scale(1); }
+    50%{ transform: translateY(-1.5px) scale(1.015); }
+  }
+  @keyframes coqui-blink{
+    0%, 92%, 100%{ transform: scaleY(1); }
+    96%{ transform: scaleY(.08); }
+  }
+  @keyframes coqui-throat{
+    0%, 16%, 100%{ transform: scaleY(1); }
+    4%{ transform: scaleY(1.14); }
+    8%{ transform: scaleY(1); }
+    11%{ transform: scaleY(1.16); }
+  }
+
+  /* ===== coqui-singing: one-shot, audio-synced call on first visit ===== */
+  body.coqui-singing #mp ellipse:nth-of-type(4),
+  body.coqui-singing #cp circle:nth-of-type(2){
+    animation: coqui-sing-throat 1.8s ease-in-out 1 !important;
+  }
+  @keyframes coqui-sing-throat{
+    0%, 100%{ transform: scaleY(1) scaleX(1); }
+    18%{ transform: scaleY(1.55) scaleX(1.12); }
+    32%{ transform: scaleY(1) scaleX(1); }
+    55%{ transform: scaleY(1.7) scaleX(1.16); }
+    75%{ transform: scaleY(1) scaleX(1); }
+  }
+
+  /* ===== hero moon-glow, slow breathing pulse ===== */
+  .hero::before{ animation: glow-breathe 9s ease-in-out infinite; }
+  @keyframes glow-breathe{
+    0%, 100%{ opacity: 1; }
+    50%{ opacity: .6; }
+  }
+
+  /* ===== sound-design wave bars, staggered slow settle ===== */
+  .wave-row span{
+    animation: wave-breathe 3.6s ease-in-out infinite;
+    transform-origin: bottom center;
+  }
+  .wave-row span:nth-child(3n+1){ animation-delay: 0s; }
+  .wave-row span:nth-child(3n+2){ animation-delay: .4s; }
+  .wave-row span:nth-child(3n){ animation-delay: .8s; }
+  @keyframes wave-breathe{
+    0%, 100%{ transform: scaleY(1); }
+    50%{ transform: scaleY(.85); }
+  }
+  .sound-steps{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:8px;}
+  @media (max-width:860px){.sound-steps{grid-template-columns:1fr;}}
+  .sound-step{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px; transition:transform .2s, border-color .2s, box-shadow .2s;}
+  .sound-step:hover{transform:translateY(-3px); border-color:rgba(255,255,255,.2); box-shadow:0 10px 24px rgba(0,0,0,.25);}
+  .sound-step .n{font-family:var(--font-display); font-size:20px; color:var(--coral); font-weight:600;}
+  .sound-step h3{font-size:14.5px; font-weight:800; margin-top:8px;}
+  .sound-step p{font-size:13px; color:var(--text-muted); margin-top:6px; line-height:1.55;}
+
+  /* demo */
+  #demo{position:relative; overflow:hidden;}
+  #demo::before{content:""; position:absolute; top:-40px; right:-15%; width:60%; height:360px;
+    background:radial-gradient(ellipse 60% 100% at 70% 0%, rgba(229,80,59,.14), transparent 70%); pointer-events:none; z-index:0;}
+  #demo > *{position:relative; z-index:1;}
+  .carousel{position:relative;}
+  .carousel-track{
+    display:flex; gap:20px; overflow-x:auto; scroll-snap-type:x mandatory;
+    margin-top:32px; padding-bottom:4px; scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+  }
+  @media (prefers-reduced-motion:reduce){ .carousel-track{scroll-behavior:auto;} }
+  .carousel-track::-webkit-scrollbar{height:6px;}
+  #demo-track > *{scroll-snap-align:start; flex:0 0 min(380px,88%);}
+  .car-nav{
+    all:unset; cursor:pointer; position:absolute; top:calc(50% + 12px); transform:translateY(-50%);
+    width:36px; height:36px; border-radius:50%; background:var(--surface-raised); border:1px solid var(--line);
+    color:var(--text-primary); display:flex; align-items:center; justify-content:center; font-size:16px; z-index:3;
+    transition:border-color .2s, opacity .2s;
+  }
+  .car-nav.prev{left:-14px;} .car-nav.next{right:-14px;}
+  .car-nav:disabled{opacity:.3; cursor:default;}
+  .car-nav:hover:not(:disabled){border-color:rgba(255,255,255,.3);}
+  .car-nav:focus-visible{outline:2px solid var(--turquoise); outline-offset:2px;}
+  @media (max-width:600px){.car-nav{display:none;}}
+  .car-dots{display:flex; gap:6px; justify-content:center; margin-top:14px;}
+  .car-dots button{all:unset; cursor:pointer; width:6px; height:6px; border-radius:50%; background:var(--line); transition:width .2s, background .2s;}
+  .car-dots button.on{width:16px; border-radius:3px; background:var(--coral);}
+  .car-dots button:focus-visible{outline:2px solid var(--turquoise); outline-offset:2px;}
+
+  /* screens: real store-listing screenshots, no phone frame needed — the
+     art already includes its own background/copy. */
+  #screens-track > *{scroll-snap-align:start; flex:0 0 auto;}
+  .screen-shot{height:480px; width:auto; border-radius:22px; display:block;
+    box-shadow:0 24px 44px -16px rgba(0,0,0,.55), inset 0 0 0 2px rgba(255,255,255,.04);}
+  @media (max-width:600px){.screen-shot{height:400px;}}
+
+  .demo-card{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:16px; display:flex; gap:16px; transition:border-color .2s, transform .2s, box-shadow .2s;}
+  .demo-card:hover{border-color:rgba(255,255,255,.2); transform:translateY(-2px); box-shadow:0 12px 28px rgba(0,0,0,.25);}
+  @media (max-width:520px){.demo-card{flex-direction:column;}}
+
+  .demo-cover{position:relative; flex:none; width:112px; height:112px; border-radius:14px; overflow:hidden; background:var(--surface-raised);}
+  @media (max-width:520px){.demo-cover{width:100%; height:180px;}}
+  .demo-cover img{width:100%; height:100%; object-fit:cover; display:block;}
+  .demo-cover::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.45) 100%); pointer-events:none;}
+  .demo-card.is-playing .demo-cover::before{content:""; position:absolute; inset:0; box-shadow:inset 0 0 0 2px var(--turquoise); border-radius:14px; z-index:1; pointer-events:none;}
+
+  .demo-play{all:unset; position:absolute; inset:0; margin:auto; width:44px; height:44px; border-radius:50%; background:var(--coral-strong); color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.35); transition:background .15s, transform .15s; z-index:2;}
+  .demo-play svg{width:20px; height:20px;}
+  .demo-play .ic-pause{display:none;}
+  .demo-play.is-playing .ic-play{display:none;}
+  .demo-play.is-playing .ic-pause{display:block;}
+  .demo-play:hover{background:var(--coral-hover); transform:scale(1.06);}
+
+  .demo-body{flex:1 1 auto; min-width:0; display:flex; flex-direction:column; justify-content:center;}
+  .demo-body .kind{font-size:10px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; color:var(--moon-gold);}
+  .demo-title{font-size:16px; font-weight:700; font-family:var(--font-body); margin-top:5px; line-height:1.3;}
+
+  .demo-scrub{margin-top:12px;}
+  .demo-track{position:relative; height:6px; border-radius:999px; background:rgba(255,255,255,.12); cursor:pointer;}
+  .demo-fill{position:absolute; inset:0; width:0%; border-radius:999px; background:linear-gradient(90deg,var(--turquoise),var(--lavender)); pointer-events:none;}
+  .demo-thumb{position:absolute; top:50%; left:0%; width:12px; height:12px; border-radius:50%; background:#fff; transform:translate(-50%,-50%); opacity:0; transition:opacity .15s; box-shadow:0 1px 4px rgba(0,0,0,.4); pointer-events:none;}
+  .demo-track:hover .demo-thumb, .demo-track:focus-visible .demo-thumb{opacity:1;}
+  .demo-time{display:flex; justify-content:space-between; margin-top:6px; font-size:11px; color:var(--text-muted); font-variant-numeric:tabular-nums;}
+  .demo-note{margin-top:18px; font-size:12.5px; color:var(--text-muted);}
+
+  /* app-preview: lightweight phone mockups (scoped, no bleed into the rest of the page) */
+  #app-preview{
+    --cat-dormir:#8B80F5; --cat-relajar:#6FB8F0; --cat-valores:#4FD8B0; --cat-musica:#FF8FA3;
+  }
+  #app-preview .phone-row{display:flex; gap:32px; flex-wrap:wrap; margin-top:32px; justify-content:center;}
+  #app-preview .phone-col{flex:0 0 auto; max-width:220px;}
+  #app-preview .phone{width:220px; height:478px; border-radius:34px; border:8px solid #12102b; background:var(--bg-bottom); position:relative; overflow:hidden; box-shadow:0 24px 44px -16px rgba(0,0,0,.55), inset 0 0 0 2px rgba(255,255,255,.04);}
+  #app-preview .notch{position:absolute; top:0; left:50%; transform:translateX(-50%); width:88px; height:16px; background:#12102b; border-radius:0 0 10px 10px; z-index:6;}
+  #app-preview .home{position:absolute; bottom:6px; left:50%; transform:translateX(-50%); width:74px; height:3px; border-radius:2px; background:rgba(255,255,255,.35); z-index:6;}
+  #app-preview .screen{position:relative; height:100%; display:flex; flex-direction:column;}
+  #app-preview .statusbar{display:flex; justify-content:space-between; padding:8px 16px 2px; font-size:8.5px; color:var(--text-secondary); font-variant-numeric:tabular-nums;}
+  #app-preview .phone-caption{margin-top:12px; font-size:11.5px; color:var(--text-muted); text-align:center; line-height:1.5;}
+
+  #app-preview .lib-header{display:flex; align-items:center; justify-content:space-between; padding:10px 12px 0;}
+  #app-preview .wordmark{display:flex; align-items:center; gap:5px; font-family:var(--font-display); font-weight:700; font-size:13px; color:var(--text-primary);}
+  #app-preview .moon-ico{width:12px; height:12px; border-radius:50%; background:var(--moon-gold); box-shadow:-4px -2px 0 -1px var(--bg-bottom) inset;}
+  #app-preview .parent-btn{width:24px; height:24px; border-radius:50%; background:var(--surface-raised); display:flex; align-items:center; justify-content:center; color:var(--text-secondary); font-size:10px;}
+  #app-preview .greeting{padding:5px 12px 9px; font-size:9px; color:var(--text-secondary);}
+  #app-preview .chips{display:flex; gap:6px; padding:0 12px 10px; overflow-x:auto;}
+  #app-preview .chip{display:inline-flex; align-items:center; gap:4px; flex:0 0 auto; background:var(--surface-raised); border:1px solid var(--line); border-radius:999px; padding:5px 10px; font-size:8.5px; font-weight:700; color:var(--text-secondary); white-space:nowrap;}
+  #app-preview .chip .dot{width:5px; height:5px; border-radius:50%;}
+  #app-preview .chip.active{background:rgba(139,128,245,.18); border-color:transparent; color:var(--cat-dormir);}
+  #app-preview .lib-body{flex:1; overflow:hidden; padding:0 12px;}
+  #app-preview .cat-label{display:flex; align-items:center; gap:5px; font-size:9.5px; font-weight:700; color:var(--text-primary); margin:6px 0 7px;}
+  #app-preview .cat-label .dot{width:6px; height:6px; border-radius:50%;}
+  #app-preview .cat-label .see-all{margin-left:auto; font-weight:600; font-size:8px; color:var(--text-muted);}
+  #app-preview .grid2{display:grid; grid-template-columns:1fr 1fr; gap:7px;}
+  #app-preview .pcard{background:var(--surface); border-radius:11px; overflow:hidden;}
+  #app-preview .pcover{position:relative; aspect-ratio:1/1; display:flex; align-items:flex-end; padding:5px; background-size:cover; background-position:center; background-color:var(--surface-raised);}
+  #app-preview .pcover::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%); pointer-events:none;}
+  #app-preview .mini-cover{background-size:cover; background-position:center;}
+  #app-preview .pcover .dur{position:relative; z-index:1; background:rgba(14,11,34,.55); color:var(--text-primary); font-size:7.5px; font-weight:700; padding:2px 5px; border-radius:5px;}
+  #app-preview .ptitle{font-size:8.5px; font-weight:700; color:var(--text-primary); padding:5px 6px 7px; line-height:1.25;}
+  #app-preview .cover-dormir{background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.18),transparent 55%), linear-gradient(155deg,var(--cat-dormir),var(--surface) 85%);}
+  #app-preview .cover-relajar{background:radial-gradient(circle at 70% 20%,rgba(255,255,255,.18),transparent 55%), linear-gradient(155deg,var(--cat-relajar),var(--surface) 85%);}
+  #app-preview .miniplayer{display:flex; align-items:center; gap:8px; background:var(--surface-raised); border-radius:11px; padding:6px 8px; margin:auto 12px 12px; position:relative; box-shadow:0 8px 18px rgba(0,0,0,.35);}
+  #app-preview .ptrack{position:absolute; top:0; left:8px; right:8px; height:2px; background:rgba(255,255,255,.12); border-radius:2px;}
+  #app-preview .ptrack::after{content:""; position:absolute; left:0; top:0; height:100%; width:38%; background:var(--lavender); border-radius:2px;}
+  #app-preview .mini-cover{width:30px; height:30px; border-radius:8px; flex:0 0 auto; background:linear-gradient(155deg,var(--cat-dormir),var(--surface));}
+  #app-preview .mini-meta{flex:1; min-width:0;}
+  #app-preview .mini-meta .t{font-size:9px; font-weight:700; color:var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  #app-preview .mini-meta .n{font-size:8px; color:var(--text-muted);}
+  #app-preview .mini-play{width:24px; height:24px; border-radius:50%; background:var(--coral-strong); display:flex; align-items:center; justify-content:center; color:#fff; font-size:9px; flex:0 0 auto;}
+
+  #app-preview .player-top{display:flex; align-items:center; gap:8px; padding:10px 14px 0; font-size:9px; color:var(--text-secondary);}
+  #app-preview .back-ico{width:22px; height:22px; border-radius:50%; background:var(--surface-raised); display:flex; align-items:center; justify-content:center; font-size:10px;}
+  #app-preview .player-body{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:6px 18px 16px; gap:12px;}
+  #app-preview .player-cover{width:148px; height:148px; border-radius:18px; position:relative; overflow:hidden; background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.22),transparent 55%), linear-gradient(160deg,var(--cat-dormir),var(--bg-top) 88%); box-shadow:0 14px 28px -10px rgba(0,0,0,.5);}
+  #app-preview .player-cover .m{position:absolute; top:14px; right:14px; width:18px; height:18px; border-radius:50%; background:var(--moon-gold); box-shadow:-6px -2px 0 -1px var(--bg-top) inset;}
+  #app-preview .player-meta{text-align:center;}
+  #app-preview .player-meta h3{font-size:13.5px; color:var(--text-primary);}
+  #app-preview .player-meta .narrator{font-size:8.5px; color:var(--text-secondary); margin-top:3px;}
+  #app-preview .cat-pill{display:inline-block; margin-top:6px; font-size:7px; font-weight:800; letter-spacing:.04em; padding:3px 8px; border-radius:999px; background:rgba(139,128,245,.16); color:var(--cat-dormir);}
+  #app-preview .progress{width:100%;}
+  #app-preview .p-track{height:3px; border-radius:2px; background:var(--surface-raised); position:relative;}
+  #app-preview .p-track::after{content:""; position:absolute; left:0; top:0; height:100%; width:42%; background:var(--lavender); border-radius:2px;}
+  #app-preview .knob{position:absolute; left:42%; top:50%; width:8px; height:8px; border-radius:50%; background:var(--lavender-soft); transform:translate(-50%,-50%); box-shadow:0 0 0 3px rgba(155,140,255,.2);}
+  #app-preview .p-times{display:flex; justify-content:space-between; font-size:7.5px; color:var(--text-muted); margin-top:4px;}
+  #app-preview .pcontrols{display:flex; align-items:center; justify-content:space-between; width:100%; padding:2px 2px;}
+  #app-preview .ctrl-sm{color:var(--text-secondary); font-size:11px; width:20px; text-align:center;}
+  #app-preview .ctrl-play{width:44px; height:44px; border-radius:50%; background:var(--coral-strong); display:flex; align-items:center; justify-content:center; color:#fff; font-size:15px; box-shadow:0 8px 18px -6px rgba(229,80,59,.55);}
+  #app-preview .timer-chip{align-self:center; margin-top:2px; font-size:7.5px; color:var(--text-secondary); background:var(--surface-raised); border-radius:999px; padding:4px 10px;}
+
+  #app-preview .illustration{height:240px; position:relative; overflow:hidden; background:linear-gradient(180deg,#2b2460 0%,#1b1640 55%,#120e30 100%); flex:0 0 auto;}
+  #app-preview .read-top{position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; padding:10px 12px; z-index:3;}
+  #app-preview .icon-btn{width:22px; height:22px; border-radius:50%; background:rgba(14,11,34,.55); display:flex; align-items:center; justify-content:center; color:var(--text-primary); font-size:9px;}
+  #app-preview .read-panel{flex:1; background:var(--surface); border-radius:18px 18px 0 0; margin-top:-14px; position:relative; z-index:2; padding:14px 14px 8px; display:flex; flex-direction:column;}
+  #app-preview .story-text{font-size:11px; line-height:1.7; margin:0 0 auto;}
+  #app-preview .pread{color:var(--text-primary);}
+  #app-preview .current{background:var(--moon-gold); color:var(--bg-bottom); border-radius:4px; padding:1px 5px; font-weight:800;}
+  #app-preview .upcoming{color:var(--text-muted);}
+  #app-preview .page-nav{display:flex; align-items:center; justify-content:center; gap:10px; padding-top:10px;}
+  #app-preview .chev{color:var(--text-secondary); font-size:12px;}
+  #app-preview .pdots{display:flex; gap:4px;}
+  #app-preview .pdots i{width:4px; height:4px; border-radius:50%; background:var(--line);}
+  #app-preview .pdots i.active{width:12px; border-radius:3px; background:var(--moon-gold);}
+  #app-preview .page-count{font-size:8px; color:var(--text-muted); text-align:center; margin-top:5px;}
+  #app-preview .preview-note{margin-top:22px; font-size:12.5px; color:var(--text-muted); text-align:center;}
+
+  /* read-demo */
+  .reader-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:32px;}
+  @media (max-width:860px){.reader-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:480px){.reader-grid{grid-template-columns:1fr;}}
+  .reader-card{all:unset; cursor:pointer; background:var(--surface); border:1px solid var(--line); border-radius:16px; overflow:hidden; display:flex; flex-direction:column; transition:transform .2s, border-color .2s, box-shadow .2s;}
+  .reader-card:hover{transform:translateY(-3px); border-color:rgba(255,255,255,.2); box-shadow:0 10px 24px rgba(0,0,0,.25);}
+  .reader-card img{width:100%; aspect-ratio:1; object-fit:cover; display:block;}
+  .reader-card-body{padding:14px;}
+  .reader-card-body .kind{font-size:10px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; color:var(--moon-gold);}
+  .reader-card-title{font-size:14px; font-weight:700; margin-top:5px; line-height:1.3;}
+  .reader-card-cta{margin-top:10px; font-size:12px; font-weight:800; color:var(--coral);}
+
+  /* reader modal */
+  #reader-overlay{position:fixed; inset:0; background:rgba(10,8,25,.85); z-index:100; display:flex; align-items:center; justify-content:center; padding:20px;}
+  #reader-overlay[hidden]{display:none;}
+  .reader-modal{background:var(--surface); border:1px solid var(--line); border-radius:20px; max-width:560px; width:100%; max-height:90vh; overflow:auto; padding:20px; position:relative;}
+  .reader-modal img{width:100%; border-radius:14px; display:block; background:var(--surface-raised);}
+  #reader-title{font-family:var(--font-display); font-size:17px; font-weight:600; margin-top:14px;}
+  .reader-audio-btn{all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:8px; margin-top:10px; background:var(--surface-raised); border:1px solid var(--line); border-radius:999px; padding:8px 14px; font-size:12.5px; font-weight:800; color:var(--text-primary); transition:border-color .2s;}
+  .reader-audio-btn:hover{border-color:rgba(255,255,255,.25);}
+  .reader-audio-btn svg{width:16px; height:16px; color:var(--coral);}
+  .reader-audio-btn .ic-pause{display:none;}
+  .reader-audio-btn.is-playing .ic-play{display:none;}
+  .reader-audio-btn.is-playing .ic-pause{display:block;}
+  #reader-text{margin-top:10px; font-size:14px; color:var(--text-secondary); line-height:1.6;}
+  .reader-nav{display:flex; align-items:center; justify-content:space-between; margin-top:16px;}
+  .reader-nav button{all:unset; cursor:pointer; width:38px; height:38px; border-radius:50%; background:var(--surface-raised); display:flex; align-items:center; justify-content:center; color:var(--text-primary);}
+  .reader-nav button:disabled{opacity:.3; cursor:default;}
+  .reader-nav button svg{width:18px; height:18px;}
+  .reader-dots{display:flex; gap:6px;}
+  .reader-dot{width:6px; height:6px; border-radius:50%; background:var(--line);}
+  .reader-dot.on{background:var(--coral);}
+  #reader-close{position:absolute; top:14px; right:14px; all:unset; cursor:pointer; width:32px; height:32px; border-radius:50%; background:var(--surface-raised); display:flex; align-items:center; justify-content:center; color:var(--text-primary);}
+
+  .cta-band{border-top:1px solid var(--line); text-align:center; padding-block:64px;}
+  .cta-band h2{font-size:clamp(24px,4vw,36px);}
+  .cta-band p.lede{margin-inline:auto;}
+  .cta-band .cta-row{justify-content:center; margin-top:28px;}
+
+  footer{border-top:1px solid var(--line); padding-block:34px 60px; display:flex; flex-direction:column; gap:10px; align-items:center; color:var(--text-muted); font-size:12.5px;}
+  footer .foot-top{width:100%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;}
+  footer .logo span{font-size:15px;}
+  .legal-links{display:flex; gap:16px; flex-wrap:wrap;}
+  .legal-links a{color:var(--text-muted); text-decoration:underline;}
+  .legal-links a:hover{color:var(--text-secondary);}
+  .donate-btn{background:var(--surface); border:1px solid var(--line); color:var(--text-primary); text-decoration:none; font-weight:700; font-size:12.5px; border-radius:999px; padding:8px 16px; transition:border-color .2s;}
+  .donate-btn:hover{border-color:rgba(255,255,255,.25);}
+
+
+</style>
+
+<svg id="brand-defs" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="crescent-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+      <rect width="120" height="120" fill="black"/>
+      <circle cx="88" cy="38" r="26" fill="white"/>
+      <circle cx="77" cy="29" r="24" fill="black"/>
+    </mask>
+  </defs>
+  <g id="mp">
+    <circle cx="88" cy="38" r="26" fill="#FFD98A" mask="url(#crescent-mask)"/>
+    <ellipse cx="46" cy="86" rx="10" ry="6" fill="#219A66"/>
+    <ellipse cx="76" cy="86" rx="10" ry="6" fill="#219A66"/>
+    <ellipse cx="60" cy="72" rx="32" ry="26" fill="#3ECF8E"/>
+    <ellipse cx="60" cy="86" rx="18" ry="10" fill="#2FB77C"/>
+    <circle cx="45" cy="52" r="13" fill="#3ECF8E"/><circle cx="75" cy="52" r="13" fill="#3ECF8E"/>
+    <circle cx="45" cy="50" r="8.5" fill="#F3F1FB"/><circle cx="75" cy="50" r="8.5" fill="#F3F1FB"/>
+    <circle cx="46.5" cy="51" r="4.2" fill="#1B1640"/><circle cx="76.5" cy="51" r="4.2" fill="#1B1640"/>
+    <circle cx="48" cy="49" r="1.4" fill="#fff"/><circle cx="78" cy="49" r="1.4" fill="#fff"/>
+  </g>
+  <g id="cp">
+    <circle cx="60" cy="64" r="40" fill="#3ECF8E"/><circle cx="60" cy="86" r="18" fill="#2FB77C"/>
+    <circle cx="38" cy="46" r="15" fill="#3ECF8E"/><circle cx="82" cy="46" r="15" fill="#3ECF8E"/>
+    <circle cx="38" cy="45" r="10" fill="#F3F1FB"/><circle cx="82" cy="45" r="10" fill="#F3F1FB"/>
+    <circle cx="40" cy="46" r="5" fill="#1B1640"/><circle cx="84" cy="46" r="5" fill="#1B1640"/>
+    <circle cx="42" cy="43.5" r="1.6" fill="#fff"/><circle cx="86" cy="43.5" r="1.6" fill="#fff"/>
+  </g>
+</svg>
+
+<div class="wrap">
+  <header class="topbar" id="site-header">
+    <div class="logo">
+      <svg viewBox="0 0 120 120"><use href="#mp"/></svg>
+      <span><span class="co">Coqui</span><span class="sl">Sleep</span></span>
+    </div>
+    <div class="lang-chip">
+      <button data-lang="es" class="on">ES</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="pt">PT</button>
+    </div>
+  </header>
+
+  <section class="hero" style="border-top:none;">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-8-8"/><path d="M12 4a8 8 0 0 0 8 8"/></svg>
+          <span data-i18n="badge"></span>
+        </div>
+        <h1 data-i18n-html="h1"></h1>
+        <p class="sub" data-i18n="sub"></p>
+        <div class="cta-row">
+          <span class="soon-tag" data-i18n="soon"></span>
+          <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.3c0-2.9 2.4-4.3 2.5-4.4-1.4-2-3.5-2.3-4.2-2.3-1.8-.2-3.5 1-4.4 1-.9 0-2.3-1-3.8-1-2 0-3.8 1.2-4.8 2.9-2 3.6-.5 8.9 1.5 11.8 1 1.4 2.1 3 3.6 3 1.5-.1 2-.9 3.8-.9s2.3.9 3.8.9c1.6 0 2.6-1.4 3.6-2.9 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3.1-1.2-3.2-4.8Z"/><path d="M14.8 3.5c.8-1 1.4-2.3 1.2-3.5-1.2 0-2.6.8-3.4 1.8-.7.9-1.4 2.2-1.2 3.5 1.3.1 2.6-.7 3.4-1.8Z"/></svg><span><span class="small" data-i18n="storeApple"></span>App Store</span></a>
+          <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.6c-.4.4-.6.9-.6 1.6v15.6c0 .7.2 1.2.6 1.6l8.8-9.2-8.8-9.2Z"/><path d="M15.4 15.3 4.4 21.5l8-8.7 3 2.5Z"/><path d="M15.4 8.7 4.4 2.5l8 8.7 3-2.5Z"/></svg><span><span class="small" data-i18n="storeGoogle"></span>Google Play</span></a>
+        </div>
+        <div class="trust-row">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="trust1"></span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="trust2"></span></span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="trust3"></span></span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-stage">
+          <svg viewBox="0 0 120 120"><use href="#mp"/></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <p class="eyebrow" data-i18n="screensEyebrow"></p>
+    <h2 data-i18n="screensH2"></h2>
+    <p class="lede" data-i18n="screensLede"></p>
+
+    <div class="carousel" id="screens-carousel">
+    <div class="carousel-track" id="screens-track">
+      <img class="screen-shot" src="screens/1_portada.png" alt="" loading="lazy">
+      <img class="screen-shot" src="screens/2_melodias-que-arropan.png" alt="" loading="lazy">
+      <img class="screen-shot" src="screens/3_un-mundo-de-cuentos.png" alt="" loading="lazy">
+      <img class="screen-shot" src="screens/4_modo-leer-juntos.png" alt="" loading="lazy">
+      <img class="screen-shot" src="screens/5_ilustraciones-imaginacion.png" alt="" loading="lazy">
+      <img class="screen-shot" src="screens/6_canciones-de-cuna.png" alt="" loading="lazy">
+      <img class="screen-shot" src="screens/7_docenas-de-historias.png" alt="" loading="lazy">
+      <img class="screen-shot" src="screens/8_control-de-padres.png" alt="" loading="lazy">
+    </div>
+    <button class="car-nav prev" type="button" aria-label="Previous">&#8249;</button>
+    <button class="car-nav next" type="button" aria-label="Next">&#8250;</button>
+    <div class="car-dots" id="screens-dots"></div>
+    </div>
+  </section>
+
+  <section id="value">
+    <p class="eyebrow" data-i18n="valueEyebrow"></p>
+    <h2 data-i18n="valueH2"></h2>
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-8-8"/><path d="M12 4a8 8 0 0 0 8 8"/></svg></div>
+        <h3 data-i18n="v1h"></h3><p data-i18n="v1p"></p>
+      </div>
+      <div class="value-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h9M4 12h6M4 19h13"/><path d="M15 5l4 4-4 4"/></svg></div>
+        <h3 data-i18n="v2h"></h3><p data-i18n="v2p"></p>
+      </div>
+      <div class="value-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></div>
+        <h3 data-i18n="v3h"></h3><p data-i18n="v3p"></p>
+      </div>
+      <div class="value-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20" transform="rotate(45 12 12)"/></svg></div>
+        <h3 data-i18n="v4h"></h3><p data-i18n="v4p"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="app-preview">
+    <p class="eyebrow" data-i18n="previewEyebrow"></p>
+    <h2 data-i18n="previewH2"></h2>
+    <p class="lede" data-i18n="previewLede"></p>
+    <div class="phone-row">
+      <div class="phone-col">
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="statusbar"><span>9:41</span><span>100%</span></div>
+            <div class="lib-header">
+              <div class="wordmark"><span class="moon-ico"></span>CoquiSleep</div>
+              <div class="parent-btn">&#9679;</div>
+            </div>
+            <div class="greeting">Hola, familia</div>
+            <div class="chips">
+              <div class="chip active"><span class="dot" style="background:var(--cat-dormir)"></span>Dormir</div>
+              <div class="chip"><span class="dot" style="background:var(--cat-relajar)"></span>Relajar</div>
+              <div class="chip"><span class="dot" style="background:var(--cat-valores)"></span>Valores</div>
+              <div class="chip"><span class="dot" style="background:var(--cat-musica)"></span>Música</div>
+            </div>
+            <div class="lib-body">
+              <div class="cat-label"><span class="dot" style="background:var(--cat-dormir)"></span>Para dormir<span class="see-all">Ver todo</span></div>
+              <div class="grid2">
+                <div class="pcard"><div class="pcover" style="background-image:url(reading-demo/lua-do-coqui-1.png)"><span class="dur">3 pág.</span></div><div class="ptitle">La Lucecita del Coquisito</div></div>
+                <div class="pcard"><div class="pcover" style="background-image:url(reading-demo/sofia-e-o-coqui-1.png)"><span class="dur">3 pág.</span></div><div class="ptitle">Sofía y la Canción del Coquisito</div></div>
+              </div>
+              <div class="cat-label"><span class="dot" style="background:var(--cat-humor,var(--coral))"></span>Humor<span class="see-all">Ver todo</span></div>
+              <div class="grid2">
+                <div class="pcard"><div class="pcover" style="background-image:url(reading-demo/iguana-escondida-1.png)"><span class="dur">3 pág.</span></div><div class="ptitle">Iguanita y el Escondite</div></div>
+                <div class="pcard"><div class="pcover" style="background-image:url(reading-demo/marcos-e-a-iguana-1.png)"><span class="dur">3 pág.</span></div><div class="ptitle">Marcos y la Iguana</div></div>
+              </div>
+            </div>
+            <div class="miniplayer">
+              <div class="ptrack"></div>
+              <div class="mini-cover" style="background-image:url(reading-demo/lua-do-coqui-1.png)"></div>
+              <div class="mini-meta"><div class="t">La Lucecita del Coquisito</div><div class="n">Cuento ilustrado · Dormir</div></div>
+              <div class="mini-play">&#9654;</div>
+            </div>
+          </div>
+          <div class="home"></div>
+        </div>
+        <p class="phone-caption" data-i18n="previewCap1"></p>
+      </div>
+
+      <div class="phone-col">
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="statusbar"><span>9:41</span><span>100%</span></div>
+            <div class="player-top"><div class="back-ico">&#8249;</div>Reproduciendo · Música</div>
+            <div class="player-body">
+              <div class="player-cover" style="background-image:url(demo/coqui-corajoso.png); background-size:cover; background-position:center;"></div>
+              <div class="player-meta">
+                <h3>El Coquisito Valiente</h3>
+                <span class="cat-pill" style="background:rgba(255,143,163,.18); color:var(--cat-musica)">MÚSICA</span>
+              </div>
+              <div class="progress">
+                <div class="p-track"><div class="knob"></div></div>
+                <div class="p-times"><span>0:42</span><span>2:00</span></div>
+              </div>
+              <div class="pcontrols">
+                <div class="ctrl-sm">&#9202;</div>
+                <div class="ctrl-sm">&#8634;15</div>
+                <div class="ctrl-play">&#9654;</div>
+                <div class="ctrl-sm">15&#8635;</div>
+                <div class="ctrl-sm">&#9776;</div>
+              </div>
+              <div class="timer-chip">Temporizador: 30 min</div>
+            </div>
+          </div>
+          <div class="home"></div>
+        </div>
+        <p class="phone-caption" data-i18n="previewCap2"></p>
+      </div>
+
+      <div class="phone-col">
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="illustration" style="background-image:url(reading-demo/lua-do-coqui-1.png); background-size:cover; background-position:center;">
+              <div class="read-top"><div class="icon-btn">&#10005;</div><div class="icon-btn">&#9654;</div></div>
+            </div>
+            <div class="read-panel">
+              <p class="story-text">
+                <span class="pread">En el rincón más verde del jardín vivía un</span>
+                <span class="current">coquisito</span>
+                <span class="upcoming">muy pequeño que no lograba dormir.</span>
+              </p>
+              <div class="page-nav">
+                <span class="chev">&#8249;</span>
+                <div class="pdots"><i class="active"></i><i></i><i></i></div>
+                <span class="chev">&#8250;</span>
+              </div>
+              <div class="page-count">1 / 3</div>
+            </div>
+          </div>
+          <div class="home"></div>
+        </div>
+        <p class="phone-caption" data-i18n="previewCap3"></p>
+      </div>
+    </div>
+    <p class="preview-note" data-i18n="previewNote"></p>
+  </section>
+
+  <section id="catalog">
+    <p class="eyebrow" data-i18n="catEyebrow"></p>
+    <h2 data-i18n="catH2"></h2>
+    <p class="lede" data-i18n="catLede"></p>
+    <div class="catalog-count"><strong>70</strong> <span data-i18n="catCount"></span></div>
+    <div class="cat-grid" id="cat-grid"></div>
+  </section>
+
+  <section id="sound">
+    <p class="eyebrow" data-i18n="soundEyebrow"></p>
+    <h2 data-i18n="soundH2"></h2>
+    <p class="lede" data-i18n="soundLede"></p>
+    <div class="wave-row" id="wave-row"></div>
+    <div class="sound-steps">
+      <div class="sound-step"><div class="n">01</div><h3 data-i18n="s1h"></h3><p data-i18n="s1p"></p></div>
+      <div class="sound-step"><div class="n">02</div><h3 data-i18n="s2h"></h3><p data-i18n="s2p"></p></div>
+      <div class="sound-step"><div class="n">03</div><h3 data-i18n="s3h"></h3><p data-i18n="s3p"></p></div>
+    </div>
+  </section>
+
+  <section id="coqui">
+    <p class="eyebrow" data-i18n="coquiEyebrow"></p>
+    <div class="story-section">
+      <div class="story-art">
+        <svg viewBox="0 0 120 120"><use href="#cp"/></svg>
+      </div>
+      <div class="story-copy">
+        <h2 data-i18n="coquiH2"></h2>
+        <p data-i18n-html="coquiP1"></p>
+        <p data-i18n="coquiP2"></p>
+        <div class="story-quote" data-i18n="coquiQuote"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo">
+    <p class="eyebrow" data-i18n="demoEyebrow"></p>
+    <h2 data-i18n="demoH2"></h2>
+    <p class="lede" data-i18n="demoLede"></p>
+
+    <div class="carousel" id="demo-carousel">
+    <div class="carousel-track" id="demo-track">
+      <article class="demo-card" data-demo-id="coqui-corajoso">
+        <div class="demo-cover">
+          <img src="demo/coqui-corajoso.png" alt="" loading="lazy">
+          <button class="demo-play" type="button">
+            <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+        </div>
+        <div class="demo-body">
+          <div class="kind" data-i18n="demoCat1"></div>
+          <h3 class="demo-title" data-i18n="demoTitle1"></h3>
+          <div class="demo-scrub">
+            <div class="demo-track" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+              <div class="demo-fill"></div>
+              <div class="demo-thumb"></div>
+            </div>
+            <div class="demo-time"><span class="t-cur">0:00</span><span class="t-dur">--:--</span></div>
+          </div>
+        </div>
+        <audio class="demo-audio" preload="metadata"
+          data-src-es="demo/coqui-corajoso-es.mp3"
+          data-src-en="demo/coqui-corajoso-en.mp3"
+          data-src-pt="demo/coqui-corajoso-pt.mp3"></audio>
+      </article>
+
+      <article class="demo-card" data-demo-id="voce-e-capaz">
+        <div class="demo-cover">
+          <img src="demo/voce-e-capaz.png" alt="" loading="lazy">
+          <button class="demo-play" type="button">
+            <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+        </div>
+        <div class="demo-body">
+          <div class="kind" data-i18n="demoCat2"></div>
+          <h3 class="demo-title" data-i18n="demoTitle2"></h3>
+          <div class="demo-scrub">
+            <div class="demo-track" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+              <div class="demo-fill"></div>
+              <div class="demo-thumb"></div>
+            </div>
+            <div class="demo-time"><span class="t-cur">0:00</span><span class="t-dur">--:--</span></div>
+          </div>
+        </div>
+        <audio class="demo-audio" preload="metadata"
+          data-src-es="demo/voce-e-capaz-es.mp3"
+          data-src-en="demo/voce-e-capaz-en.mp3"
+          data-src-pt="demo/voce-e-capaz-pt.mp3"></audio>
+      </article>
+
+      <article class="demo-card" data-demo-id="canta-com-coragem">
+        <div class="demo-cover">
+          <img src="demo/canta-com-coragem.png" alt="" loading="lazy">
+          <button class="demo-play" type="button">
+            <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+        </div>
+        <div class="demo-body">
+          <div class="kind" data-i18n="demoCat3"></div>
+          <h3 class="demo-title" data-i18n="demoTitle3"></h3>
+          <div class="demo-scrub">
+            <div class="demo-track" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+              <div class="demo-fill"></div>
+              <div class="demo-thumb"></div>
+            </div>
+            <div class="demo-time"><span class="t-cur">0:00</span><span class="t-dur">--:--</span></div>
+          </div>
+        </div>
+        <audio class="demo-audio" preload="metadata"
+          data-src-es="demo/canta-com-coragem-es.mp3"
+          data-src-en="demo/canta-com-coragem-en.mp3"
+          data-src-pt="demo/canta-com-coragem-pt.mp3"></audio>
+      </article>
+
+      <article class="demo-card" data-demo-id="cordeirinho">
+        <div class="demo-cover">
+          <img src="demo/cordeirinho.png" alt="" loading="lazy">
+          <button class="demo-play" type="button">
+            <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+        </div>
+        <div class="demo-body">
+          <div class="kind" data-i18n="demoCat4"></div>
+          <h3 class="demo-title" data-i18n="demoTitle4"></h3>
+          <div class="demo-scrub">
+            <div class="demo-track" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+              <div class="demo-fill"></div>
+              <div class="demo-thumb"></div>
+            </div>
+            <div class="demo-time"><span class="t-cur">0:00</span><span class="t-dur">--:--</span></div>
+          </div>
+        </div>
+        <audio class="demo-audio" preload="metadata"
+          data-src-es="demo/cordeirinho-es.mp3"
+          data-src-en="demo/cordeirinho-en.mp3"
+          data-src-pt="demo/cordeirinho-pt.mp3"></audio>
+      </article>
+    </div>
+    <button class="car-nav prev" type="button" aria-label="Previous">&#8249;</button>
+    <button class="car-nav next" type="button" aria-label="Next">&#8250;</button>
+    <div class="car-dots" id="demo-dots"></div>
+    </div>
+    <p class="demo-note" data-i18n="demoNote"></p>
+  </section>
+
+  <section id="read-demo">
+    <p class="eyebrow" data-i18n="readEyebrow"></p>
+    <h2 data-i18n="readH2"></h2>
+    <p class="lede" data-i18n="readLede"></p>
+    <div class="reader-grid" id="reader-grid"></div>
+  </section>
+
+  <section class="cta-band">
+    <p class="eyebrow" style="justify-content:center;display:flex;" data-i18n="ctaEyebrow"></p>
+    <h2 data-i18n="ctaH2"></h2>
+    <p class="lede" data-i18n="ctaLede"></p>
+    <div class="cta-row">
+      <span class="soon-tag" data-i18n="soon"></span>
+      <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.3c0-2.9 2.4-4.3 2.5-4.4-1.4-2-3.5-2.3-4.2-2.3-1.8-.2-3.5 1-4.4 1-.9 0-2.3-1-3.8-1-2 0-3.8 1.2-4.8 2.9-2 3.6-.5 8.9 1.5 11.8 1 1.4 2.1 3 3.6 3 1.5-.1 2-.9 3.8-.9s2.3.9 3.8.9c1.6 0 2.6-1.4 3.6-2.9 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3.1-1.2-3.2-4.8Z"/><path d="M14.8 3.5c.8-1 1.4-2.3 1.2-3.5-1.2 0-2.6.8-3.4 1.8-.7.9-1.4 2.2-1.2 3.5 1.3.1 2.6-.7 3.4-1.8Z"/></svg><span><span class="small" data-i18n="storeApple"></span>App Store</span></a>
+      <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.6c-.4.4-.6.9-.6 1.6v15.6c0 .7.2 1.2.6 1.6l8.8-9.2-8.8-9.2Z"/><path d="M15.4 15.3 4.4 21.5l8-8.7 3 2.5Z"/><path d="M15.4 8.7 4.4 2.5l8 8.7 3-2.5Z"/></svg><span><span class="small" data-i18n="storeGoogle"></span>Google Play</span></a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-top">
+      <div class="logo"><svg viewBox="0 0 120 120"><use href="#mp"/></svg><span><span class="co">Coqui</span><span class="sl">Sleep</span></span></div>
+      <a class="donate-btn" href="https://www.paypal.com/donate?business=geovaneartedesign%40gmail.com&currency_code=USD&item_name=CoquiSleep" target="_blank" rel="noopener noreferrer" data-i18n="donateBtn"></a>
+    </div>
+    <div class="legal-links">
+      <a href="/privacy.html" data-i18n="privacyTitle"></a>
+      <a href="/terms.html" data-i18n="termsTitle"></a>
+    </div>
+    <div data-i18n="footerNote"></div>
+    <div style="font-size:11px;color:var(--text-muted);opacity:.6;margin-top:6px;">Coquí call recording: "Coquíes1.ogg" by ValWey, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer" style="color:inherit;">CC BY-SA 3.0</a></div>
+  </footer>
+</div>
+
+<div id="reader-overlay" hidden>
+  <div class="reader-modal" role="dialog" aria-modal="true">
+    <button id="reader-close" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <img id="reader-img" src="" alt="">
+    <h3 id="reader-title"></h3>
+    <button id="reader-audio-btn" type="button" class="reader-audio-btn" hidden>
+      <svg class="ic-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="ic-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      <span data-i18n="readerListenBtn"></span>
+    </button>
+    <audio id="reader-audio" preload="none"></audio>
+    <p id="reader-text"></p>
+    <div class="reader-nav">
+      <button id="reader-prev" type="button" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="reader-dots" id="reader-dots"></div>
+      <button id="reader-next" type="button" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var I18N = {
+    es: {
+      badge: 'Sin crear cuenta',
+      h1: 'El coquí que le <span class="accent">canta</span> a tus nenes hasta dormirlos',
+      sub: 'Cuentos narrados y canciones de cuna en español e inglés, inspirados en la ranita que lleva siglos arrullando a Puerto Rico cada noche. Le das play y ya: no hace falta cuenta ni contraseña.',
+      soon: 'Muy pronto',
+      storeApple: 'Descárgala en',
+      storeGoogle: 'Disponible en',
+      trust1: 'Empieza gratis', trust2: 'Español, inglés y portugués', trust3: 'Hecha para la hora de dormir',
+      screensEyebrow: 'La app por dentro',
+      screensH2: 'Así se ve CoquiSleep',
+      screensLede: 'Capturas reales de la app: la biblioteca, el reproductor, el modo de lectura y el Área de Padres.',
+      valueEyebrow: 'Por qué CoquiSleep',
+      valueH2: 'Para que el nene se duerma, no para que no suelte el teléfono',
+      v1h: 'Nada de cuentas', v1p: 'Abres la app y ya estás escuchando. No hay formulario antes del primer cuento.',
+      v2h: 'Trilingüe sin trampa', v2p: 'Cada cuento existe en los tres idiomas. Ninguno se queda corto en español mientras el inglés se lleva el catálogo completo.',
+      v3h: 'Para el oído, no para los ojos', v3p: "La narración y las canciones están pensadas pa' escuchar con la luz apagada. Los dibujitos son un plus, no lo principal.",
+      v4h: 'Un precio que no duele', v4p: "Un plan de entrada pensado pa' usar todas las noches, no una compra que te das una vez al mes.",
+      catEyebrow: 'Adentro de la app',
+      catH2: 'Setenta cuentos, no cinco de muestra',
+      catLede: 'Cuentos ilustrados y canciones de cuna, agrupados por lo que tu nene necesita esa noche: valor, sueño, risa o solo una historia bonita.',
+      catCount: 'historias y canciones, creciendo cada semana',
+      soundEyebrow: 'Cómo suena por dentro',
+      soundH2: 'El sonido baja de revoluciones a propósito',
+      soundLede: 'Nada de música bonita puesta ahí de fondo porque sí. Cada canción se arma en capas que se van apagando solitas hacia el final del cuento. Ojo: esto es mezcla de audio bien pensada, no un tratamiento. No hacemos ninguna promesa clínica.',
+      s1h: 'El tempo va bajando', s1p: 'La canción arranca suave y se va calmando hacia el final del cuento, como cuando tú mismo bajas la voz sin darte cuenta al arrullar a alguien.',
+      s2h: 'La voz manda', s2p: 'El instrumental se queda atrás a propósito. Lo primero que se escucha siempre es quien cuenta el cuento, no la música de fondo.',
+      s3h: 'Mismo volumen, sin sustos', s3p: 'Todas las pistas pasan por la misma masterización, así que no hay saltos de volumen de una canción a otra a medianoche.',
+      coquiEyebrow: 'De dónde sale el nombre',
+      coquiH2: 'El coquí hace esto hace cientos de años',
+      coquiP1: 'El <strong>coquí</strong> es una rana bien chiquita, del tamaño de una moneda, que solo se encuentra en Puerto Rico. Nadie que haya pasado una noche en la isla se olvida de su canto: "co-quí, co-quí", sonando desde el monte hasta que amanece. Generaciones enteras de puertorriqueños se han dormido con ese sonido, estén en San Juan o en el Bronx.',
+      coquiP2: 'CoquiSleep agarra ese mismo papel, una voz constante en la oscuridad, y la convierte en cuentos y canciones. Es para las familias de la diáspora que quieren que sus nenes crezcan hablando español e inglés sin perder ese sonido de fondo que se trajeron de la isla.',
+      coquiQuote: '"Co-quí, co-quí." La misma rana que ha arrullado a una isla entera ahora arrulla tu casa también.',
+      ctaEyebrow: 'Ya casi',
+      ctaH2: 'Tu primer cuento te está esperando',
+      ctaLede: 'CoquiSleep ya está lista. Llega muy pronto a la App Store — sin cuenta, sin tarjeta, sin vueltas.',
+      footerNote: '© 2026 CoquiSleep. Cuentos e ilustraciones pensados para la hora de dormir.',
+      demoEyebrow: 'Escúchalo tú mismo',
+      demoH2: 'Dale play ahora mismo, gratis',
+      demoLede: 'Aquí tienes cuatro cuentos completos, sin cuenta ni correo. Solo aprieta play y escucha.',
+      demoCat1: 'Canción · Coraje', demoTitle1: 'El Coquisito Valiente',
+      demoCat2: 'Canción · Valores', demoTitle2: 'Tú Eres Capaz, Pequeño Guerrero',
+      demoCat3: 'Canción · Coraje', demoTitle3: 'Canta con Valentía, Coquisito',
+      demoCat4: 'Canción · Dormir', demoTitle4: 'El Corderito de Lana Suave',
+      demoNote: 'Este cuento salió directo de la app, tal cual lo escucharía tu nene. Nada de demo recortada.',
+      readEyebrow: 'Para hojear, a tu ritmo',
+      readH2: 'Cuatro cuentos ilustrados, completos y gratis',
+      readLede: 'Toca cualquiera y hojéalo de una. Son las mismas ilustraciones y el mismo texto que ves dentro de la app.',
+      readBtn: 'Leer',
+      readerListenBtn: 'Escuchar esta página',
+      previewEyebrow: 'Por dentro de la app',
+      previewH2: 'Así se ve de verdad',
+      previewLede: 'Tres pantallas reales de cómo tu nene va a usar CoquiSleep cada noche.',
+      previewCap1: 'La biblioteca, organizada por lo que hace falta esa noche.',
+      previewCap2: 'El reproductor, con temporizador de sueño incluido.',
+      previewCap3: 'Lectura con la palabra que se escucha resaltada, como en karaoke.',
+      previewNote: 'Capturas de diseño del app real, no son fotos de stock.',
+      donateBtn: 'Apoya el proyecto',
+      privacyTitle: 'Política de Privacidad',
+      termsTitle: 'Términos de Uso',
+    },
+    en: {
+      badge: 'No account needed',
+      h1: 'The little coquí who <span class="accent">sings</span> your kids to sleep',
+      sub: "Narrated stories and lullabies in Spanish and English, inspired by the tiny frog that's been lulling Puerto Rico to sleep for centuries. Hit play and that's it — no account, no password to remember.",
+      soon: 'Coming soon',
+      storeApple: 'Download on the',
+      storeGoogle: 'Get it on',
+      trust1: 'Free to start', trust2: 'Spanish, English & Portuguese', trust3: 'Made for bedtime',
+      screensEyebrow: 'Inside the app',
+      screensH2: 'This is what CoquiSleep looks like',
+      screensLede: 'Real screens from the app: the library, the player, reading mode, and the Parents Area.',
+      valueEyebrow: 'Why CoquiSleep',
+      valueH2: "So your kid falls asleep, not so they won't put the phone down",
+      v1h: 'No accounts, period.', v1p: "Open the app and you're already listening. No form before the first story.",
+      v2h: 'Trilingual, no shortcuts', v2p: 'Every story exists in all three languages. None of them get stuck with the leftovers while English gets the full catalog.',
+      v3h: 'Made for ears, not eyes', v3p: 'Narration and lullabies are built to hear with the lights off. The illustrations are a bonus, not the point.',
+      v4h: "A price that doesn't sting", v4p: 'An entry plan built for every single night, not a purchase you only make once a month.',
+      catEyebrow: 'Inside the app',
+      catH2: 'Seventy stories, not five demo ones',
+      catLede: 'Illustrated stories and lullabies, grouped by what your kid actually needs tonight: courage, sleep, a laugh, or just a good story.',
+      catCount: 'stories and songs, growing every week',
+      soundEyebrow: 'What it actually sounds like',
+      soundH2: 'The sound winds down on purpose',
+      soundLede: "This isn't pretty background music tossed in because it sounded nice. Every song is built in layers that fade out on their own toward the end. Heads up: this is sound design, not a treatment. We're not making any medical claims.",
+      s1h: 'The tempo slows down', s1p: "Each song opens soft and eases down further by the end of the story, the way your own voice drops without you noticing when you're lulling someone to sleep.",
+      s2h: 'The voice leads', s2p: "The instrumental stays out of the way on purpose. What you hear first is always whoever's telling the story, not the music behind it.",
+      s3h: 'Same volume, no surprises', s3p: "Every track goes through the same mastering pass, so there's no volume jump between one song and the next at midnight.",
+      coquiEyebrow: 'Where the name comes from',
+      coquiH2: "The coquí's been doing this for hundreds of years",
+      coquiP1: "The <strong>coquí</strong> is a tiny frog, small enough to sit on a coin, found only in Puerto Rico. Nobody who's spent a night on the island forgets its call — 'co-quí, co-quí,' rolling down from the hills until sunrise. Generations of Puerto Ricans have fallen asleep to that sound, whether they were in San Juan or the Bronx.",
+      coquiP2: 'CoquiSleep picks up that same job, a steady voice in the dark, and turns it into stories and lullabies, for diaspora families who want their kids growing up speaking Spanish and English without losing that sound they carried over from the island.',
+      coquiQuote: '"Co-quí, co-quí." The same little frog that lulls a whole island to sleep now lulls your house too.',
+      ctaEyebrow: 'Almost there',
+      ctaH2: 'Your first story is waiting',
+      ctaLede: "CoquiSleep is ready. Coming very soon to the App Store — no account, no card, no runaround.",
+      footerNote: '© 2026 CoquiSleep. Stories and illustrations made for bedtime.',
+      demoEyebrow: 'Try it yourself',
+      demoH2: 'Press play right now, free',
+      demoLede: "Here are four full stories, no account, no email. Just hit play and listen.",
+      demoCat1: 'Song · Courage', demoTitle1: 'The Brave Little Coquí',
+      demoCat2: 'Song · Values', demoTitle2: 'You Are Capable, Little Warrior',
+      demoCat3: 'Song · Courage', demoTitle3: 'Sing with Courage, Little Coquí',
+      demoCat4: 'Song · Bedtime', demoTitle4: 'The Little Lamb with the Soft Wool',
+      demoNote: "Pulled straight from the app, the same way your kid would hear it. No trimmed-down demo.",
+      readEyebrow: 'Flip through it yourself',
+      readH2: 'Four illustrated stories, complete and free',
+      readLede: "Tap any one and start flipping. Same illustrations, same text you'd find inside the app.",
+      readBtn: 'Read',
+      readerListenBtn: 'Listen to this page',
+      donateBtn: 'Support the project',
+      privacyTitle: 'Privacy Policy',
+      termsTitle: 'Terms of Use',
+    },
+    pt: {
+      badge: 'Sem cadastro',
+      h1: 'O coquizinho que <span class="accent">canta</span> pros seus filhos até eles pegarem no sono',
+      sub: 'Histórias narradas e canções de ninar em português, espanhol e inglês, inspiradas na ranzinha que embala Porto Rico há séculos. Aperta o play e pronto: sem cadastro, sem senha pra lembrar.',
+      soon: 'Em breve',
+      storeApple: 'Baixe na', storeGoogle: 'Disponível no',
+      trust1: 'Começa de graça', trust2: 'Português, espanhol e inglês', trust3: 'Feito pra hora de dormir',
+      screensEyebrow: 'O app por dentro',
+      screensH2: 'É assim que o CoquiSleep se parece',
+      screensLede: 'Capturas reais do app: a biblioteca, o player, o modo de leitura e a Área de Pais.',
+      valueEyebrow: 'Por que o CoquiSleep',
+      valueH2: 'Pra seu filho dormir, não pra ele não largar o celular',
+      v1h: 'Sem cadastro, ponto final', v1p: 'Abre o app e já tá ouvindo. Nada de formulário antes da primeira história.',
+      v2h: 'Trilíngue sem pegadinha', v2p: 'Cada história existe nos três idiomas. Nenhuma fica pela metade no português enquanto o inglês leva o catálogo inteiro.',
+      v3h: 'Feito pro ouvido, não pro olho', v3p: 'Narração e canções de ninar pensadas pra ouvir com a luz apagada. Os desenhos são um extra, não o motivo.',
+      v4h: 'Um preço que não pesa', v4p: 'Um plano de entrada pra usar todo santo dia, não uma compra que você faz de vez em quando.',
+      catEyebrow: 'Dentro do app',
+      catH2: 'Setenta histórias, não cinco de amostra',
+      catLede: 'Histórias ilustradas e canções de ninar, agrupadas pelo que seu filho precisa hoje à noite: coragem, sono, uma risada, ou só uma boa história.',
+      catCount: 'histórias e músicas, crescendo toda semana',
+      soundEyebrow: 'Como é o som por dentro',
+      soundH2: 'O som vai desacelerando de propósito',
+      soundLede: 'Não é música bonitinha jogada de fundo só porque sim. Cada canção é construída em camadas que vão se apagando sozinhas até o fim. Um aviso: isso é design de som, não tratamento. Não fazemos nenhuma promessa médica.',
+      s1h: 'O tempo vai caindo', s1p: 'Cada canção começa suave e vai baixando ainda mais perto do fim da história, do jeito que sua própria voz baixa sem você perceber quando tá embalando alguém pra dormir.',
+      s2h: 'A voz manda', s2p: 'O instrumental fica de propósito em segundo plano. O que você escuta primeiro é sempre quem tá contando a história, não a música atrás.',
+      s3h: 'Mesmo volume, sem susto', s3p: 'Toda faixa passa pela mesma masterização, então não tem salto de volume de uma canção pra outra de madrugada.',
+      coquiEyebrow: 'De onde vem o nome',
+      coquiH2: 'O coquizinho faz isso há centenas de anos',
+      coquiP1: 'O <strong>coquizinho</strong> é uma ranzinha do tamanho de uma moeda, que só existe em Porto Rico. Quem já passou uma noite na ilha não esquece o canto dele: "co-quí, co-quí", descendo do morro até o amanhecer. Gerações inteiras de porto-riquenhos dormiram com esse som, estando em San Juan ou no Bronx.',
+      coquiP2: 'O CoquiSleep pega esse mesmo papel, uma voz constante na escuridão, e transforma em histórias e canções de ninar, pras famílias da diáspora que querem que os filhos cresçam falando espanhol e inglês sem perder esse som que trouxeram da ilha.',
+      coquiQuote: '"Co-quí, co-quí." A mesma ranzinha que embala uma ilha inteira agora embala sua casa também.',
+      ctaEyebrow: 'Já já',
+      ctaH2: 'Sua primeira história está esperando',
+      ctaLede: 'O CoquiSleep já está pronto. Chega muito em breve na App Store — sem cadastro, sem cartão, sem enrolação.',
+      footerNote: '© 2026 CoquiSleep. Histórias e ilustrações pensadas pra hora de dormir.',
+      demoEyebrow: 'Escute você mesmo',
+      demoH2: 'Aperta o play agora, de graça',
+      demoLede: 'Aqui embaixo tem quatro histórias completas, sem cadastro, sem e-mail. Só apertar o play e ouvir.',
+      demoCat1: 'Música · Coragem', demoTitle1: 'O Coquizinho Corajoso',
+      demoCat2: 'Música · Valores', demoTitle2: 'Você É Capaz, Pequeno Guerreiro',
+      demoCat3: 'Música · Coragem', demoTitle3: 'Canta com Coragem, Coquizinho',
+      demoCat4: 'Música · Dormir', demoTitle4: 'O Cordeirinho da Lã Macia',
+      demoNote: 'Essa história saiu direto do app, do jeitinho que seu filho ia ouvir. Nada de demo cortada.',
+      readEyebrow: 'Pra folhear com calma',
+      readH2: 'Quatro histórias ilustradas, completas e de graça',
+      readLede: 'Toca em qualquer uma e já folheia. Mesmas ilustrações, mesmo texto que tem dentro do app.',
+      readBtn: 'Ler',
+      readerListenBtn: 'Ouvir esta página',
+      donateBtn: 'Apoie o projeto',
+      privacyTitle: 'Política de Privacidade',
+      termsTitle: 'Termos de Uso',
+    }
+  };
+
+  // 13 real categories from the app's actual catalog (70 items total).
+  // Icon per category, shared across languages — house style, simple stroke line art.
+  var CAT_ICONS = {
+    musicas: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+    valores: '<path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.5 5.5 4 2-2.5 3.5-4 5.5-4C21 5 23.5 8.5 21.5 12.5 19 16.65 12 21 12 21Z"/>',
+    dormir: '<path d="M20 12a8 8 0 1 1-8-8 8 8 0 0 0 8 8Z"/>',
+    curiosidad: '<circle cx="10" cy="10" r="6"/><path d="M20 20l-5-5"/>',
+    aventuraciencia: '<circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>',
+    aventurafamilia: '<circle cx="12" cy="12" r="9"/><path d="M15 9l-2 6-6 2 2-6 6-2Z"/>',
+    aventuraimaginacion: '<path d="M12 2a6 6 0 0 1 6 6c0 4-3 6-4 8h-4c-1-2-4-4-4-8a6 6 0 0 1 6-6Z"/><path d="M11 16l-1 5h4l-1-5"/>',
+    coragem: '<path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3Z"/>',
+    medoescuro: '<rect x="8" y="7" width="8" height="11" rx="2"/><path d="M12 2v5M9 22h6"/>',
+    paciencia: '<path d="M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9"/>',
+    relaxar: '<path d="M3 8h11a3 3 0 1 0-3-3M3 16h15a3 3 0 1 1-3 3M3 12h8"/>',
+    amizade: '<circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c0-3 2.5-5 6-5s6 2 6 5M10 20c0-3 2.5-5 6-5s6 2 6 5"/>',
+    humor: '<path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 4v-4H6a2 2 0 0 1-2-2Z"/><path d="M8 10c.5 1 1.5 1.5 2 1.5s1.5-.5 2-1.5M13 10c.5 1 1.5 1.5 2 1.5"/>'
+  };
+  var CATALOG = {
+    es: [
+      {icon:'musicas', name:'Canciones', count:35, title:'El Coquisito Valiente', p:'El coquisito se queda solo en el monte, de noche, y le da miedo. Pero se da cuenta de algo: ser valiente no es no tener miedo, es cantar tu canción de todos modos.'},
+      {icon:'valores', name:'Valores', count:17, title:'Tú Eres Capaz, Pequeño Guerrero', p:'Una canción para cuando algo no sale bien a la primera. Le recuerda a tu nene que intentarlo otra vez es lo que realmente cuenta.'},
+      {icon:'dormir', name:'Dormir', count:6, title:'La Lucecita del Coquisito', p:'El coquisito encuentra su rincón en la luna creciente y ahí se queda cantando bajito, hasta que todo el jardín se duerme con él.'},
+      {icon:'humor', name:'Humor', count:2, title:'Iguanita y el Peor Escondite del Mundo', p:'Una iguana verde bien brillante que se esconde justo entre las flores más rosadas del jardín. Un cuento para reírse un rato de los propios tropiezos.'},
+      {icon:'curiosidad', name:'Curiosidad / Ciencia', count:2, title:'El Secreto de la Luciérnaga', p:'¿Por qué se prende la luciérnaga? Es ciencia, contada con calma, como quien cuenta un cuento.'},
+      {icon:'aventuraciencia', name:'Aventura / Ciencia', count:1, title:'La Expedición al Fondo del Mar', p:'Un viaje tranquilo hasta el fondo del océano, con curiosidad de sobra y ni un solo susto en el camino.'},
+      {icon:'aventurafamilia', name:'Aventura / Familia', count:1, title:'El Mapa del Tesoro Perdido', p:'Una búsqueda de tesoro en familia donde el premio termina siendo buscarlo juntos, no encontrarlo.'},
+      {icon:'aventuraimaginacion', name:'Aventura / Imaginación', count:1, title:'El Vuelo del Globo Rojo', p:'Un globo rojo se eleva sobre el pueblo y se lleva contigo un ratito de fantasía, justo antes de cerrar los ojos.'},
+      {icon:'coragem', name:'Coraje', count:1, title:'El Que Se Anima a Probar', p:'Probar algo nuevo da nervios. Está bien sentir eso, y también está bien probarlo de todos modos.'},
+      {icon:'medoescuro', name:'Miedo a la Oscuridad', count:1, title:'La Lucecita del Cuarto', p:'Una lucecita se va apagando poco a poco, sin apuro, hasta que la oscuridad deja de asustar.'},
+      {icon:'paciencia', name:'Paciencia', count:1, title:'La Fila del Tobogán', p:'Esperar tu turno también tiene su gracia. Una historia sobre aguantar la espera sin morirse de aburrimiento.'},
+      {icon:'relaxar', name:'Relajación', count:1, title:'La Montaña Que Respira Despacio', p:'Una montaña le enseña a un nene a respirar bien lento, como si ella misma estuviera dormida.'},
+      {icon:'amizade', name:'Amistad', count:1, title:'Amigos Bajo la Lluvia', p:'Una lluvia que arruina los planes termina siendo la mejor tarde, porque hay un buen amigo cerca.'},
+    ],
+    en: [
+      {icon:'musicas', name:'Songs', count:35, title:'The Brave Little Coquí', p:"The little coquí is alone in the woods at night, and he's scared. But he figures something out: being brave isn't about not being scared, it's about singing your song anyway."},
+      {icon:'valores', name:'Values', count:17, title:"You've Got This, Little Warrior", p:"A song for when something doesn't work out the first time. It reminds your kid that trying again is what actually counts."},
+      {icon:'dormir', name:'Bedtime', count:6, title:"The Coquí's Little Light", p:'The little coquí finds his spot on the crescent moon and sings there, soft and low, until the whole garden drifts off with him.'},
+      {icon:'humor', name:'Humor', count:2, title:'Little Iggy and the Worst Hiding Spot Ever', p:'A bright green iguana who keeps hiding smack in the middle of the pinkest flowers in the garden. A gentle laugh at your own mistakes, iguana-style.'},
+      {icon:'curiosidad', name:'Curiosity / Science', count:2, title:"The Firefly's Secret", p:'Why does a firefly light up? Real science, told slow and easy, like a bedtime story instead of a textbook.'},
+      {icon:'aventuraciencia', name:'Adventure / Science', count:1, title:'The Deep Sea Expedition', p:'A calm trip down to the bottom of the ocean, plenty of curiosity along the way, and not a single scare.'},
+      {icon:'aventurafamilia', name:'Adventure / Family', count:1, title:'The Lost Treasure Map', p:'A family treasure hunt where the prize turns out to be searching together, not finding the treasure itself.'},
+      {icon:'aventuraimaginacion', name:'Adventure / Imagination', count:1, title:'The Red Balloon Ride', p:'A red balloon rises over town and takes a little daydreaming with it, right before bedtime.'},
+      {icon:'coragem', name:'Courage', count:1, title:'The One Who Tries It Anyway', p:"Trying something new is a little scary. It's fine to feel that, and it's fine to try it anyway."},
+      {icon:'medoescuro', name:'Fear of the Dark', count:1, title:'The Bedroom Night-Light', p:'A little light dims bit by bit, no rush, until the dark stops feeling like a monster.'},
+      {icon:'paciencia', name:'Patience', count:1, title:'The Line for the Slide', p:"Waiting your turn has its own fun. A story about getting through the wait without dying of boredom."},
+      {icon:'relaxar', name:'Relaxation', count:1, title:'The Mountain That Breathes Slow', p:'A mountain teaches a kid to breathe nice and slow, like the mountain itself is sleeping too.'},
+      {icon:'amizade', name:'Friendship', count:1, title:'Friends in the Rain', p:'A rainstorm that ruins the plan ends up being the best afternoon, because a good friend showed up.'},
+    ],
+    pt: [
+      {icon:'musicas', name:'Músicas', count:35, title:'O Coquizinho Corajoso', p:'O coquizinho fica sozinho na mata, de noite, e sente medo. Mas descobre uma coisa: ser corajoso não é não sentir medo, é cantar sua canção mesmo assim.'},
+      {icon:'valores', name:'Valores', count:17, title:'Você Consegue, Pequeno Guerreiro', p:'Uma canção pra quando alguma coisa não dá certo de primeira. Lembra seu filho que tentar de novo é o que realmente importa.'},
+      {icon:'dormir', name:'Dormir', count:6, title:'A Luzinha do Coquizinho', p:'O coquizinho acha seu cantinho na lua crescente e fica ali cantando baixinho, até o jardim inteiro pegar no sono com ele.'},
+      {icon:'humor', name:'Humor', count:2, title:'Iguaninha e o Pior Esconderijo do Mundo', p:'Uma iguana verde bem brilhante que se esconde bem no meio das flores mais rosa do jardim. Uma história pra rir um pouco dos próprios tropeços.'},
+      {icon:'curiosidad', name:'Curiosidade / Ciência', count:2, title:'O Segredo do Vaga-lume', p:'Por que o vaga-lume acende? Ciência mesmo, contada devagar, como quem tá contando uma história.'},
+      {icon:'aventuraciencia', name:'Aventura / Ciência', count:1, title:'A Expedição ao Fundo do Mar', p:'Uma viagem tranquila até o fundo do oceano, com bastante curiosidade no caminho e nenhum susto.'},
+      {icon:'aventurafamilia', name:'Aventura / Família', count:1, title:'O Mapa do Tesouro Perdido', p:'Uma caça ao tesouro em família onde o prêmio acaba sendo procurar junto, não achar o tesouro.'},
+      {icon:'aventuraimaginacion', name:'Aventura / Imaginação', count:1, title:'O Voo do Balão Vermelho', p:'Um balão vermelho sobe sobre a cidade e leva um pouco de imaginação junto, bem antes de fechar os olhos.'},
+      {icon:'coragem', name:'Coragem', count:1, title:'O Que Topa Experimentar', p:'Experimentar algo novo dá um friozinho na barriga. Tudo bem sentir isso, e tudo bem experimentar mesmo assim.'},
+      {icon:'medoescuro', name:'Medo do Escuro', count:1, title:'A Luzinha do Quarto', p:'Uma luzinha vai apagando aos poucos, sem pressa, até o escuro parar de dar medo.'},
+      {icon:'paciencia', name:'Paciência', count:1, title:'A Fila do Escorregador', p:'Esperar sua vez também tem sua graça. Uma história sobre aguentar a espera sem morrer de tédio.'},
+      {icon:'relaxar', name:'Relaxar', count:1, title:'A Montanha Que Respira Devagar', p:'Uma montanha ensina uma criança a respirar bem devagar, como se ela mesma estivesse dormindo.'},
+      {icon:'amizade', name:'Amizade', count:1, title:'Amigos Debaixo da Chuva', p:'Uma chuva que estraga os planos acaba virando a melhor tarde, porque tem um bom amigo por perto.'},
+    ]
+  };
+
+  // 4 short (3-page) reading stories, pulled verbatim from the app's own
+  // catalog — real content, not placeholder copy.
+  var READING_DEMOS = [
+    {
+      id: 'lua-do-coqui',
+      cover: 'reading-demo/lua-do-coqui-1.png',
+      kind: { es: 'Cuento · Dormir', en: 'Story · Bedtime', pt: 'História · Dormir' },
+      title: { es: 'La Lucecita del Coquisito', en: "The Little Coquí's Moonlight", pt: 'A Luzinha do Coquizinho' },
+      pages: [
+        { img: 'reading-demo/lua-do-coqui-1.png',
+          audio: { es: 'reading-demo/lua-do-coqui-page1-es.mp3', en: 'reading-demo/lua-do-coqui-page1-en.mp3', pt: 'reading-demo/lua-do-coqui-page1-pt.mp3' },
+          text: {
+          es: 'En el rincón más verde del jardín vivía un coquisito muy pequeño que no lograba dormir. Todos a su alrededor ya estaban calladitos, pero él se quedaba ahí, con los ojitos bien abiertos, escuchando la noche.',
+          en: "In the greenest corner of the garden lived a tiny little coquí who just couldn't fall asleep. Everyone around him had gone quiet, but he stayed there, his little eyes wide open, listening to the night.",
+          pt: 'No canto mais verde do jardim, morava um coquizinho pequenininho que não conseguia dormir. Todo mundo ao redor já estava quietinho, mas ele ficava ali, os olhinhos bem abertos, escutando a noite.'
+        }},
+        { img: 'reading-demo/lua-do-coqui-2.png',
+          audio: { es: 'reading-demo/lua-do-coqui-page2-es.mp3', en: 'reading-demo/lua-do-coqui-page2-en.mp3', pt: 'reading-demo/lua-do-coqui-page2-pt.mp3' },
+          text: {
+          es: 'Subió despacito hasta la hoja más alta y, entre las ramas, encontró una lucecita dorada: era solo un pedacito de luna, brillando calladita entre las hojas. El coquisito se acomodó justo ahí, en la curva de la luna, y sintió que su corazón se calmaba.',
+          en: 'He climbed slowly up to the highest leaf, and there between the branches he found a little golden light: just a sliver of moon, glowing softly through the leaves. The little coquí settled right into the curve of the moon and felt his heart grow calm.',
+          pt: 'Ele subiu devagarinho até a folha mais alta e, entre os galhos, encontrou uma luinha dourada: era só uma fatia da lua, brilhando quietinha por entre as folhas. O coquizinho se aconchegou bem ali, na curva da lua, e sentiu o coração ficar mais calmo.'
+        }},
+        { img: 'reading-demo/lua-do-coqui-3.png',
+          audio: { es: 'reading-demo/lua-do-coqui-page3-es.mp3', en: 'reading-demo/lua-do-coqui-page3-en.mp3', pt: 'reading-demo/lua-do-coqui-page3-pt.mp3' },
+          text: {
+          es: 'Fue entonces cuando abrió su boquita y cantó bajito: co-quí, co-quí. Una rana bostezó, un grillo dejó de saltar, una mariposa cerró sus alitas, y todo el jardín se fue quedando dormido, arrullado por la canción más dulce de la noche.',
+          en: "That's when he opened his little mouth and sang softly: co-quí, co-quí. A frog yawned, a cricket stopped hopping, a butterfly folded its tiny wings, and the whole garden drifted off to sleep, lulled by the sweetest song of the night.",
+          pt: 'Foi então que ele abriu a boquinha e cantou baixinho: co-quí, co-quí. Um sapo bocejou, um grilo parou de pular, uma borboleta fechou as asinhas, e o jardim inteiro foi adormecendo, ninado pela canção mais doce da noite.'
+        }}
+      ]
+    },
+    {
+      id: 'sofia-e-o-coqui',
+      cover: 'reading-demo/sofia-e-o-coqui-1.png',
+      kind: { es: 'Cuento · Dormir', en: 'Story · Bedtime', pt: 'História · Dormir' },
+      title: { es: 'Sofía y la Canción del Coquisito', en: "Sofia and the Little Coquí's Song", pt: 'Sofia e a Canção do Coquizinho' },
+      pages: [
+        { img: 'reading-demo/sofia-e-o-coqui-1.png', text: {
+          es: 'Sofía estaba en la cama, dando vueltas de un lado a otro, sin poder dormir. De pronto, un sonidito muy fino entró por la ventana: co-quí... co-quí...',
+          en: 'Sofia was in bed, turning from side to side, unable to fall asleep. Suddenly, a very small sound drifted in through the window: co-quí... co-quí...',
+          pt: 'Sofia estava na cama, virando de um lado pro outro, sem conseguir dormir. De repente, um som bem fininho entrou pela janela: co-quí... co-quí...'
+        }},
+        { img: 'reading-demo/sofia-e-o-coqui-2.png', text: {
+          es: 'Con curiosidad, se acercó a la ventana y vio, en una rama iluminada por la luna, a un coquisito verde cantando con toda su pequeña fuerza. Sofía se quedó ahí, calladita, solo escuchando aquel sonido tan dulce y repetido.',
+          en: 'Curious, she crept up to the window and saw, on a moonlit branch, a tiny green coquí singing with all his little might. Sofia stayed there, very still, just listening to that sweet, steady sound.',
+          pt: 'Curiosa, ela chegou pertinho da janela e viu, num galho iluminado pela lua, um coquizinho verde cantando com toda a sua força pequena. Sofia ficou ali, quietinha, só escutando aquele som gostoso de repetir.'
+        }},
+        { img: 'reading-demo/sofia-e-o-coqui-3.png', text: {
+          es: 'Volvió a la cama y cerró los ojos, tarareando bajito junto a él: co-quí, co-quí. Y así, arrullada por la canción de su amiguito allá afuera, Sofía por fin se durmió tranquila.',
+          en: "She went back to bed and closed her eyes, humming softly along with him: co-quí, co-quí. And that's how, lulled by her little friend's song outside, Sofia finally drifted off to a peaceful sleep.",
+          pt: 'Ela voltou pra cama e fechou os olhos, cantarolando baixinho junto com ele: co-quí, co-quí. E foi assim, embalada pela canção do amigo lá fora, que Sofia enfim adormeceu tranquila.'
+        }}
+      ]
+    },
+    {
+      id: 'iguana-escondida',
+      cover: 'reading-demo/iguana-escondida-1.png',
+      kind: { es: 'Cuento · Humor', en: 'Story · Humor', pt: 'História · Humor' },
+      title: { es: 'Iguanita y el Escondite Más Chistoso del Mundo', en: 'Little Iggy and the Silliest Game of Hide-and-Seek', pt: 'Iguaninha e o Esconde-Esconde Mais Sem Graça do Mundo' },
+      pages: [
+        { img: 'reading-demo/iguana-escondida-1.png', text: {
+          es: 'A Iguanita le encantaba jugar al escondite, pero tenía un pequeño problema: ¡era pésima jugando! Cada vez elegía esconderse justo en medio de las flores rosadas más llamativas del jardín, y se quedaba quietecita, segura de que nadie iba a notar una iguana verde brillante ahí parada.',
+          en: "Little Iggy loved playing hide-and-seek, except for one tiny problem: she was terrible at it! Every single time, she'd pick the brightest, pinkest flower bush in the whole garden to hide in, and stand perfectly still, sure that nobody would notice one bright green iguana sitting right there.",
+          pt: 'Iguaninha adorava brincar de esconde-esconde, só que tinha um probleminha: ela era péssima nisso! Toda vez, ela escolhia esconder bem no meio das flores cor-de-rosa mais chamativas do jardim, e ficava paradinha, achando que ninguém ia notar uma iguana verde brilhante ali.'
+        }},
+        { img: 'reading-demo/iguana-escondida-2.png', text: {
+          es: 'Sus amigos pasaban despacito, fingiendo buscar por todos lados, detrás de la piedra, debajo de la hoja, solo para no arruinarle la gracia. "¿Dónde estará Iguanita?", preguntaban riéndose bajito, mientras ella se quedaba ahí, muy seria, tratando de no moverse ni un poquito.',
+          en: 'Her friends would walk by very slowly, pretending to search everywhere else, behind the rock, under the leaf, just so they wouldn\'t spoil the fun. "Where could Little Iggy be?" they\'d ask, giggling quietly, while she stood right there, dead serious, trying her very hardest not to move a single muscle.',
+          pt: 'Seus amigos passavam bem devagarinho, fingindo procurar em todo canto, atrás da pedra, debaixo da folha, só pra não estragar a graça. "Cadê a Iguaninha?", perguntavam rindo baixinho, enquanto ela ficava ali, séria, tentando não se mexer nem um pouquinho.'
+        }},
+        { img: 'reading-demo/iguana-escondida-3.png', text: {
+          es: 'Al final, nadie pudo aguantar la risa, ¡ni siquiera la propia Iguanita! Todos se echaron a reír juntos, rodando sobre el pasto suave. Después de tanto reír, el sol se fue poniendo despacio, y Iguanita, cansadita y contenta, se acurrucó en una sombra fresquita para tomar una siesta tranquila.',
+          en: "In the end, nobody could hold in the laughter any longer, not even Little Iggy herself! Everyone burst out giggling together, rolling in the soft grass. After all that laughing, the sun began to sink low and slow, and Little Iggy, tired and happy, curled up in a cool patch of shade for a peaceful little nap.",
+          pt: 'No fim, ninguém aguentou segurar o riso, nem a própria Iguaninha! Todo mundo caiu na gargalhada junto, rolando na grama macia. Depois de tanto rir, o sol foi baixando devagar, e a Iguaninha, cansadinha e satisfeita, se enroscou na sombra fresquinha pra tirar uma soneca tranquila.'
+        }}
+      ]
+    },
+    {
+      id: 'marcos-e-a-iguana',
+      cover: 'reading-demo/marcos-e-a-iguana-1.png',
+      kind: { es: 'Cuento · Humor', en: 'Story · Humor', pt: 'História · Humor' },
+      title: { es: 'Marcos y la Iguana que No Sabía Tomar la Siesta', en: "Marcos and the Iguana Who Couldn't Nap Properly", pt: 'Marcos e a Iguana que Não Sabia Tirar Soneca Direito' },
+      pages: [
+        { img: 'reading-demo/marcos-e-a-iguana-1.png', text: {
+          es: 'Marcos quería tomar una siesta con su iguana Bolinha, pero ella tenía formas bastante raras de descansar: un momento estaba colgada de cabeza en una rama, y al siguiente usaba una chancleta vieja de almohada.',
+          en: 'Marcos wanted to take a nap with his pet iguana, Bolinha, but she had some very strange ways of resting: one minute she was hanging upside down from a branch, the next she was using an old flip-flop as a pillow.',
+          pt: 'Marcos queria tirar uma soneca com sua iguana de estimação, Bolinha, mas ela tinha jeitos bem esquisitos de descansar: uma hora estava dependurada de cabeça pra baixo num galho, outra hora usava um chinelo velho de travesseiro.'
+        }},
+        { img: 'reading-demo/marcos-e-a-iguana-2.png', text: {
+          es: '"¡Así no se puede, Bolinha!", se reía Marcos, intentando mostrarle la forma correcta: acostadita, quietecita, con los ojos cerrados. Pero cada vez que le mostraba, Bolinha inventaba una posición todavía más chistosa: apoyada de lado en una regadera, enroscada dentro de un balde.',
+          en: '"That\'s not how it works, Bolinha!" Marcos laughed, trying to show her the right way: lying flat, nice and still, eyes closed. But every time he showed her, Bolinha came up with an even funnier position: propped sideways against a watering can, curled up inside a bucket.',
+          pt: '"Assim não dá, Bolinha!", ria Marcos, e tentava mostrar o jeito certo: deitadinho, quietinho, olhos fechados. Mas a cada tentativa, Bolinha inventava uma posição nova e ainda mais engraçada: apoiada de lado num regador, enrolada dentro de um balde.'
+        }},
+        { img: 'reading-demo/marcos-e-a-iguana-3.png', text: {
+          es: 'Después de reírse tanto con los inventos de Bolinha, Marcos quedó blandito de tanto cansancio y se acostó de verdad en la hamaca del patio. Fue entonces cuando, por primera vez, Bolinha se acomodó bien quietecita a su lado, y los dos se quedaron dormidos juntos, tranquilos, al son del viento entre los árboles.',
+          en: "After laughing so much at Bolinha's inventions, Marcos felt all worn out and lay down for real in the backyard hammock. And that's when, for the very first time, Bolinha settled down quietly right beside him, and the two of them drifted off together, calm and content, to the sound of the wind in the trees.",
+          pt: 'Depois de tanto rir das invenções da Bolinha, Marcos ficou molinho de cansaço e se deitou de verdade na rede do quintal. Foi aí que, pela primeira vez, Bolinha se aconchegou bem quietinha ao lado dele, e os dois cochilaram juntos, tranquilos, ao som do vento nas árvores.'
+        }}
+      ]
+    }
+  ];
+
+  var lang = (localStorage.getItem('coquisleep_lang')) || 'es';
+  try { lang = localStorage.getItem('coquisleep_lang') || 'es'; } catch(e){ lang = 'es'; }
+
+  function applyI18n(){
+    var dict = I18N[lang];
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if (dict[k] !== undefined) el.textContent = dict[k];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(function(el){
+      var k = el.getAttribute('data-i18n-html');
+      if (dict[k] !== undefined) el.innerHTML = dict[k];
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el){
+      var k = el.getAttribute('data-i18n-placeholder');
+      if (dict[k] !== undefined) el.setAttribute('placeholder', dict[k]);
+    });
+    document.querySelectorAll('.lang-chip button').forEach(function(b){
+      b.classList.toggle('on', b.getAttribute('data-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+    renderCatalog();
+    document.querySelectorAll('.demo-card').forEach(function(c){ if (c._syncLang) c._syncLang(); });
+    renderReaderGrid();
+    renderReader();
+  }
+
+  document.querySelectorAll('.lang-chip button').forEach(function(b){
+    b.addEventListener('click', function(){
+      lang = b.getAttribute('data-lang');
+      try { localStorage.setItem('coquisleep_lang', lang); } catch(e){}
+      applyI18n();
+    });
+  });
+
+  var COUNT_WORD = { es: function(n){ return n === 1 ? 'historia' : 'historias'; }, en: function(n){ return n === 1 ? 'story' : 'stories'; }, pt: function(n){ return n === 1 ? 'história' : 'histórias'; } };
+  function renderCatalog(){
+    var data = CATALOG[lang];
+    document.getElementById('cat-grid').innerHTML = data.map(function(cat){
+      return (
+        '<div class="cat-card show">' +
+          '<svg class="cat-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:26px;height:26px;color:var(--coral)">' + CAT_ICONS[cat.icon] + '</svg>' +
+          '<div class="kind">' + cat.name + ' · ' + cat.count + ' ' + COUNT_WORD[lang](cat.count) + '</div>' +
+          '<h3>' + cat.title + '</h3>' +
+          '<p>' + cat.p + '</p>' +
+        '</div>'
+      );
+    }).join('');
+  }
+
+  // "read demo" grid + paginated reader modal
+  var readerState = { demo: null, idx: 0 };
+  function renderReaderGrid(){
+    var grid = document.getElementById('reader-grid');
+    grid.innerHTML = '';
+    READING_DEMOS.forEach(function(demo){
+      var card = document.createElement('button');
+      card.type = 'button';
+      card.className = 'reader-card';
+      var img = document.createElement('img');
+      img.src = demo.cover; img.alt = ''; img.loading = 'lazy';
+      var body = document.createElement('div');
+      body.className = 'reader-card-body';
+      var kind = document.createElement('div'); kind.className = 'kind'; kind.textContent = demo.kind[lang] || demo.kind.es;
+      var title = document.createElement('div'); title.className = 'reader-card-title'; title.textContent = demo.title[lang] || demo.title.es;
+      var cta = document.createElement('div'); cta.className = 'reader-card-cta'; cta.textContent = (I18N[lang] && I18N[lang].readBtn) || 'Leer';
+      body.appendChild(kind); body.appendChild(title); body.appendChild(cta);
+      card.appendChild(img); card.appendChild(body);
+      card.addEventListener('click', function(){ openReader(demo); });
+      grid.appendChild(card);
+    });
+  }
+
+  function renderReader(){
+    if (!readerState.demo) return;
+    var page = readerState.demo.pages[readerState.idx];
+    document.getElementById('reader-img').src = page.img;
+    document.getElementById('reader-text').textContent = page.text[lang] || page.text.es;
+    document.getElementById('reader-title').textContent = readerState.demo.title[lang] || readerState.demo.title.es;
+    var dotsEl = document.getElementById('reader-dots');
+    dotsEl.innerHTML = '';
+    readerState.demo.pages.forEach(function(_, i){
+      var d = document.createElement('span');
+      d.className = 'reader-dot' + (i === readerState.idx ? ' on' : '');
+      dotsEl.appendChild(d);
+    });
+    document.getElementById('reader-prev').disabled = readerState.idx === 0;
+    document.getElementById('reader-next').disabled = readerState.idx === readerState.demo.pages.length - 1;
+
+    var audioEl = document.getElementById('reader-audio');
+    var audioBtn = document.getElementById('reader-audio-btn');
+    audioEl.pause();
+    audioBtn.classList.remove('is-playing');
+    var src = page.audio && (page.audio[lang] || page.audio.es);
+    if (src){
+      audioBtn.hidden = false;
+      audioEl.src = src;
+    } else {
+      audioBtn.hidden = true;
+      audioEl.removeAttribute('src');
+    }
+  }
+  function openReader(demo){
+    readerState.demo = demo;
+    readerState.idx = 0;
+    renderReader();
+    document.getElementById('reader-overlay').hidden = false;
+    document.body.style.overflow = 'hidden';
+  }
+  function closeReader(){
+    document.getElementById('reader-overlay').hidden = true;
+    document.getElementById('reader-audio').pause();
+    document.body.style.overflow = '';
+  }
+  document.getElementById('reader-prev').addEventListener('click', function(){ if (readerState.idx > 0){ readerState.idx--; renderReader(); } });
+  document.getElementById('reader-next').addEventListener('click', function(){ if (readerState.demo && readerState.idx < readerState.demo.pages.length - 1){ readerState.idx++; renderReader(); } });
+  document.getElementById('reader-close').addEventListener('click', closeReader);
+  document.getElementById('reader-audio-btn').addEventListener('click', function(){
+    var audioEl = document.getElementById('reader-audio');
+    if (audioEl.paused) audioEl.play(); else audioEl.pause();
+  });
+  document.getElementById('reader-audio').addEventListener('play', function(){ document.getElementById('reader-audio-btn').classList.add('is-playing'); });
+  document.getElementById('reader-audio').addEventListener('pause', function(){ document.getElementById('reader-audio-btn').classList.remove('is-playing'); });
+  document.getElementById('reader-audio').addEventListener('ended', function(){ document.getElementById('reader-audio-btn').classList.remove('is-playing'); });
+  document.getElementById('reader-overlay').addEventListener('click', function(e){ if (e.target.id === 'reader-overlay') closeReader(); });
+  document.addEventListener('keydown', function(e){
+    var overlay = document.getElementById('reader-overlay');
+    if (overlay.hidden) return;
+    if (e.key === 'Escape') closeReader();
+    if (e.key === 'ArrowRight') document.getElementById('reader-next').click();
+    if (e.key === 'ArrowLeft') document.getElementById('reader-prev').click();
+  });
+
+  // decorative waveform that visually eases down, echoing the "sound design" copy
+  (function(){
+    var row = document.getElementById('wave-row');
+    var bars = 40;
+    var html = '';
+    for (var i = 0; i < bars; i++){
+      var t = i / (bars - 1);
+      var h = 14 + (1 - t) * 46 + Math.sin(i * 1.3) * 6 * (1 - t);
+      html += '<span style="height:' + Math.max(6, h) + 'px"></span>';
+    }
+    row.innerHTML = html;
+  })();
+
+  // custom audio player for the free demo songs
+  function formatTime(s){
+    if (!isFinite(s)) return '--:--';
+    var m = Math.floor(s / 60), sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  function setupDemoPlayer(card){
+    var audio = card.querySelector('.demo-audio');
+    var btn = card.querySelector('.demo-play');
+    var track = card.querySelector('.demo-track');
+    var fill = card.querySelector('.demo-fill');
+    var thumb = card.querySelector('.demo-thumb');
+    var curEl = card.querySelector('.t-cur');
+    var durEl = card.querySelector('.t-dur');
+
+    function applySrcForLang(){
+      var wasPlaying = !audio.paused;
+      var pos = audio.currentTime || 0;
+      var src = audio.getAttribute('data-src-' + lang);
+      if (audio.currentSrc && audio.currentSrc.indexOf(src) !== -1) return;
+      audio.src = src;
+      audio.addEventListener('loadedmetadata', function onMeta(){
+        audio.removeEventListener('loadedmetadata', onMeta);
+        audio.currentTime = pos;
+        durEl.textContent = formatTime(audio.duration);
+        if (wasPlaying) audio.play();
+      });
+    }
+    card._syncLang = applySrcForLang;
+    applySrcForLang();
+
+    function setPlaying(playing){
+      btn.classList.toggle('is-playing', playing);
+      card.classList.toggle('is-playing', playing);
+    }
+
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.demo-audio').forEach(function(other){
+        if (other !== audio && !other.paused) other.pause();
+      });
+      if (audio.paused) audio.play(); else audio.pause();
+    });
+    audio.addEventListener('play', function(){ setPlaying(true); });
+    audio.addEventListener('pause', function(){ setPlaying(false); });
+    audio.addEventListener('ended', function(){ setPlaying(false); });
+    audio.addEventListener('timeupdate', function(){
+      var pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+      fill.style.width = pct + '%';
+      thumb.style.left = pct + '%';
+      curEl.textContent = formatTime(audio.currentTime);
+      track.setAttribute('aria-valuenow', Math.round(pct));
+    });
+    audio.addEventListener('loadedmetadata', function(){
+      durEl.textContent = formatTime(audio.duration);
+    });
+
+    function seek(clientX){
+      var r = track.getBoundingClientRect();
+      var pct = Math.min(1, Math.max(0, (clientX - r.left) / r.width));
+      if (audio.duration) audio.currentTime = pct * audio.duration;
+    }
+    track.addEventListener('pointerdown', function(e){
+      seek(e.clientX);
+      var move = function(ev){ seek(ev.clientX); };
+      var up = function(){ document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up); };
+      document.addEventListener('pointermove', move);
+      document.addEventListener('pointerup', up);
+    });
+    track.addEventListener('keydown', function(e){
+      if (!audio.duration) return;
+      if (e.key === 'ArrowRight') audio.currentTime = Math.min(audio.duration, audio.currentTime + 5);
+      if (e.key === 'ArrowLeft') audio.currentTime = Math.max(0, audio.currentTime - 5);
+    });
+  }
+  document.querySelectorAll('.demo-card').forEach(setupDemoPlayer);
+
+  function initCarousel(rootId){
+    var root = document.getElementById(rootId);
+    if (!root) return;
+    var track = root.querySelector('.carousel-track');
+    var prev = root.querySelector('.car-nav.prev');
+    var next = root.querySelector('.car-nav.next');
+    var dotsWrap = root.querySelector('.car-dots');
+    var items = Array.prototype.slice.call(track.children);
+
+    dotsWrap.innerHTML = '';
+    items.forEach(function(_, i){
+      var dot = document.createElement('button');
+      dot.setAttribute('aria-label', 'Item ' + (i + 1));
+      dot.addEventListener('click', function(){ items[i].scrollIntoView({ behavior:'smooth', inline:'start', block:'nearest' }); });
+      dotsWrap.appendChild(dot);
+    });
+    var dots = Array.prototype.slice.call(dotsWrap.children);
+
+    function closestIndex(){
+      var pos = track.scrollLeft, best = 0, bestDist = Infinity;
+      items.forEach(function(item, i){
+        var d = Math.abs(item.offsetLeft - pos);
+        if (d < bestDist){ bestDist = d; best = i; }
+      });
+      return best;
+    }
+    function update(){
+      var i = closestIndex();
+      dots.forEach(function(d, di){ d.classList.toggle('on', di === i); });
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
+    }
+    var raf;
+    track.addEventListener('scroll', function(){
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(update);
+    });
+    prev.addEventListener('click', function(){
+      items[Math.max(0, closestIndex() - 1)].scrollIntoView({ behavior:'smooth', inline:'start', block:'nearest' });
+    });
+    next.addEventListener('click', function(){
+      items[Math.min(items.length - 1, closestIndex() + 1)].scrollIntoView({ behavior:'smooth', inline:'start', block:'nearest' });
+    });
+    update();
+  }
+  initCarousel('demo-carousel');
+  initCarousel('screens-carousel');
+
+  // sticky header gains a background once the page scrolls
+  (function(){
+    var header = document.getElementById('site-header');
+    function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 8); }
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // sections/cards fade+rise into view as the page scrolls
+  (function(){
+    var targets = document.querySelectorAll('section, .value-card, .cat-card, .sound-step, .demo-card');
+    targets.forEach(function(el){ el.classList.add('reveal'); });
+    if (!('IntersectionObserver' in window)){
+      targets.forEach(function(el){ el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(function(el){ io.observe(el); });
+  })();
+
+  applyI18n();
+
+  // coqui greeting call: plays once per visit, on the first tap/click/key
+  // (browsers block audio-with-sound before a user gesture, so this fires
+  // on that first gesture rather than strictly on page load)
+  (function(){
+    var KEY = 'coquiSangThisVisit';
+    if (sessionStorage.getItem(KEY)) return;
+    var audio = new Audio('/coqui-call.mp3');
+    audio.preload = 'auto';
+    var fired = false;
+    function sing(){
+      if (fired) return;
+      fired = true;
+      sessionStorage.setItem(KEY, '1');
+      document.body.classList.add('coqui-singing');
+      audio.currentTime = 0;
+      audio.play().catch(function(){});
+      setTimeout(function(){ document.body.classList.remove('coqui-singing'); }, 1900);
+      ['pointerdown', 'keydown', 'touchstart'].forEach(function(evt){
+        document.removeEventListener(evt, sing);
+      });
+    }
+    ['pointerdown', 'keydown', 'touchstart'].forEach(function(evt){
+      document.addEventListener(evt, sing, { once: true, passive: true });
+    });
+  })();
+})();
+</script>
+
+</body></html>

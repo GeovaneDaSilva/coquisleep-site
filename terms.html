@@ -1,0 +1,255 @@
+<!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CoquiSleep — Términos de Uso</title>
+<meta name="description" content="Términos de Uso de CoquiSleep.">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-top:#1B1640; --bg-bottom:#0E0B22;
+    --surface:#241E44; --surface-raised:#2E2755; --line:rgba(255,255,255,.10);
+    --lavender:#9B8CFF; --turquoise:#5FD9C7; --moon-gold:#FFD98A;
+    --coral:#FF6F59; --coral-strong:#E5503B; --coral-hover:#CE402D;
+    --text-primary:#F3F1FB; --text-secondary:#B5AEDD; --text-muted:#9992C7;
+    --font-display:'Fredoka',system-ui,sans-serif; --font-body:'Nunito',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-bottom) 55%,#0A0819 100%) fixed;
+    color:var(--text-primary); font-family:var(--font-body); padding-inline:20px; font-size:15px; line-height:1.65;
+  }
+  h1,h2,h3{font-family:var(--font-display); margin:0;}
+  a{color:var(--turquoise);}
+  .wrap{max-width:720px; margin:0 auto; padding-block:32px 60px;}
+  header{display:flex; align-items:center; justify-content:space-between; padding-block:10px 30px;}
+  .logo{display:flex; align-items:center; gap:10px; text-decoration:none;}
+  .logo svg{width:30px; height:30px;}
+  .logo span{font-family:var(--font-display); font-weight:600; font-size:17px; color:var(--text-primary);}
+  .logo .co{color:var(--coral);} .logo .sl{color:var(--lavender);}
+  .lang-chip{display:flex; gap:6px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:5px;}
+  .lang-chip button{all:unset; cursor:pointer; padding:5px 12px; border-radius:999px; color:var(--text-muted); font-family:inherit; font-size:12px; font-weight:800;}
+  .lang-chip button.on{background:var(--coral-strong); color:#fff;}
+  h1.doc-title{font-size:clamp(26px,4vw,36px); font-weight:600;}
+  .updated{color:var(--text-muted); font-size:13px; margin-top:8px;}
+  .content{margin-top:36px;}
+  .content h3{font-size:16.5px; font-weight:700; color:var(--text-primary); margin-top:30px; margin-bottom:8px;}
+  .content h3:first-child{margin-top:0;}
+  .content p{color:var(--text-secondary); margin:0 0 12px;}
+  .content ul{color:var(--text-secondary); margin:0 0 12px; padding-left:20px;}
+  .content li{margin-bottom:4px;}
+  .content strong{color:var(--text-primary);}
+  .content em{color:var(--text-muted); font-size:13px; font-style:normal;}
+  .back-link{display:inline-block; margin-top:44px; font-size:13px; color:var(--text-muted); text-decoration:none;}
+  .back-link:hover{color:var(--text-secondary);}
+</style>
+</head><body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <mask id="crescent-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+      <rect width="120" height="120" fill="black"/>
+      <circle cx="88" cy="38" r="26" fill="white"/>
+      <circle cx="77" cy="29" r="24" fill="black"/>
+    </mask>
+  </defs>
+  <g id="mp">
+    <circle cx="88" cy="38" r="26" fill="#FFD98A" mask="url(#crescent-mask)"/>
+    <ellipse cx="46" cy="86" rx="10" ry="6" fill="#219A66"/>
+    <ellipse cx="76" cy="86" rx="10" ry="6" fill="#219A66"/>
+    <ellipse cx="60" cy="72" rx="32" ry="26" fill="#3ECF8E"/>
+    <ellipse cx="60" cy="86" rx="18" ry="10" fill="#2FB77C"/>
+    <circle cx="45" cy="52" r="13" fill="#3ECF8E"/><circle cx="75" cy="52" r="13" fill="#3ECF8E"/>
+    <circle cx="45" cy="50" r="8.5" fill="#F3F1FB"/><circle cx="75" cy="50" r="8.5" fill="#F3F1FB"/>
+    <circle cx="46.5" cy="51" r="4.2" fill="#1B1640"/><circle cx="76.5" cy="51" r="4.2" fill="#1B1640"/>
+    <circle cx="48" cy="49" r="1.4" fill="#fff"/><circle cx="78" cy="49" r="1.4" fill="#fff"/>
+  </g>
+</svg>
+
+<div class="wrap">
+  <header>
+    <a class="logo" href="/">
+      <svg viewBox="0 0 120 120"><use href="#mp"/></svg>
+      <span><span class="co">Coqui</span><span class="sl">Sleep</span></span>
+    </a>
+    <div class="lang-chip">
+      <button data-lang="es" class="on">ES</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="pt">PT</button>
+    </div>
+  </header>
+
+  <h1 class="doc-title" data-i18n="title"></h1>
+  <p class="updated" data-i18n="updated"></p>
+  <div class="content" id="content"></div>
+  <a class="back-link" href="/" data-i18n="back"></a>
+</div>
+
+<script>
+(function(){
+  var TITLES = {
+    es: 'Términos de Uso', en: 'Terms of Use', pt: 'Termos de Uso'
+  };
+  var UPDATED = {
+    es: 'Última actualización: 22 de septiembre de 2026.',
+    en: 'Last updated: September 22, 2026.',
+    pt: 'Última atualização: 22 de setembro de 2026.'
+  };
+  var BACK = { es: '← Volver a CoquiSleep', en: '← Back to CoquiSleep', pt: '← Voltar para o CoquiSleep' };
+
+  var BODY = {
+es: `
+<h3>1. Aceptación de los Términos</h3>
+<p>Al descargar, instalar o usar la app CoquiSleep ("la App"), aceptas estos Términos de Uso. Si no estás de acuerdo, por favor no uses la App. CoquiSleep es operada por Geovane ("nosotros"). Si eres padre, madre o tutor/a, estos Términos también aplican al uso de la App por parte de tu hijo/a bajo tu supervisión.</p>
+
+<h3>2. El servicio</h3>
+<p>CoquiSleep ofrece cuentos para dormir, canciones de cuna y contenido de audio e ilustraciones relajantes para niños, en español, inglés y portugués. No se requiere cuenta, registro ni inicio de sesión para usar la App. Parte del contenido es gratuito; contenido adicional requiere una suscripción de pago opcional (ver Sección 5).</p>
+
+<h3>3. Contenido y propiedad intelectual</h3>
+<p>Los cuentos, ilustraciones, narraciones y música disponibles en CoquiSleep se producen con la ayuda de herramientas de inteligencia artificial y son revisados por nuestro equipo antes de publicarse. Todo el contenido es propiedad de CoquiSleep o está licenciado a CoquiSleep, y se ofrece únicamente para uso personal, no comercial, dentro de la App. No puedes copiar, redistribuir ni vender el contenido de la App.</p>
+
+<h3>4. Sin alegaciones médicas o terapéuticas</h3>
+<p>CoquiSleep está pensada únicamente para entretenimiento y relajación. No es un producto ni servicio médico, clínico o terapéutico, no afirma tratar, diagnosticar ni curar ninguna condición (incluyendo trastornos del sueño), y nunca debe reemplazar el consejo médico profesional.</p>
+
+<h3>5. Suscripciones y renovación automática</h3>
+<p>CoquiSleep ofrece una suscripción mensual opcional de renovación automática, con un precio de $4.99/mes (el precio puede variar según la región y se muestra antes de confirmar la compra), que desbloquea contenido adicional. Las suscripciones se venden y facturan íntegramente a través de la App Store de Apple o de Google Play Store, según el método de pago que elijas.</p>
+<p><strong>Suscriptores de la App Store de Apple — divulgación obligatoria:</strong></p>
+<p>"El pago se cargará a tu cuenta de Apple ID al confirmar la compra. La suscripción se renueva automáticamente a menos que la renovación automática se desactive al menos 24 horas antes de que finalice el período actual. Tu cuenta será cargada por la renovación dentro de las 24 horas anteriores al final del período actual, y se indicará el costo de la renovación. Las suscripciones y la renovación automática pueden administrarse por el cliente, y la renovación automática puede desactivarse accediendo a la Configuración de la cuenta del cliente después de la compra. Cualquier porción no utilizada de un período de prueba gratuito, si se ofrece, se perderá cuando el cliente compre una suscripción, cuando corresponda." <em>(traducción del texto oficial de divulgación de Apple, derivado del Schedule 2 del Apple Developer Program License Agreement; la versión en inglés de Apple es la referencia vinculante)</em></p>
+<p>Puedes administrar o cancelar tu suscripción en cualquier momento desde la Configuración de tu cuenta de Apple ID (Ajustes > [tu nombre] > Suscripciones) o, en Google Play, desde la app de Google Play (Menú > Suscripciones). Cancelar detiene las renovaciones futuras, pero no reembolsa el período de facturación actual.</p>
+<p><strong>Reembolsos:</strong> Todos los cobros, reembolsos y disputas de pago son gestionados directamente por Apple o Google, conforme a sus propias políticas de reembolso. CoquiSleep no procesa pagos ni reembolsos directamente y no tiene acceso a tu información de pago.</p>
+
+<h3>6. Privacidad</h3>
+<p>Nuestra <a href="/privacy.html">Política de Privacidad</a> explica qué información (si la hay) recopila CoquiSleep, y se incorpora a estos Términos por referencia.</p>
+
+<h3>7. Orientación parental</h3>
+<p>CoquiSleep está diseñada para ser usada por niños bajo la supervisión de un padre, madre o tutor/a. Los padres/tutores son responsables de decidir si la App y su contenido son apropiados para su hijo/a.</p>
+
+<h3>8. Exención de garantías</h3>
+<p>La App se ofrece "tal cual" y "según disponibilidad", sin garantías de ningún tipo, en la máxima medida permitida por la ley.</p>
+
+<h3>9. Limitación de responsabilidad</h3>
+<p>En la máxima medida permitida por la ley aplicable, CoquiSleep y su operador no serán responsables por daños indirectos, incidentales o consecuentes derivados del uso de la App.</p>
+
+<h3>10. Cambios a estos Términos</h3>
+<p>Podemos actualizar estos Términos periódicamente. Las actualizaciones se publicarán en la App y/o en coquisleep.app con una nueva fecha de vigencia. El uso continuado de la App después de un cambio implica que aceptas los Términos actualizados.</p>
+
+<h3>11. Contacto</h3>
+<p>¿Preguntas sobre estos Términos? Escríbenos a info@coquisleep.app.</p>
+
+<p><em>Este documento es un borrador basado en los términos de apps comparables publicados y en los requisitos oficiales de divulgación de suscripciones de Apple; no sustituye el asesoramiento legal independiente.</em></p>
+`,
+en: `
+<h3>1. Acceptance of Terms</h3>
+<p>By downloading, installing, or using the CoquiSleep app ("the App"), you agree to these Terms of Use. If you do not agree, please do not use the App. CoquiSleep is operated by Geovane ("we", "us"). If you are a parent or guardian, these Terms also apply to your child's use of the App under your supervision.</p>
+
+<h3>2. The Service</h3>
+<p>CoquiSleep provides bedtime stories, lullabies, and calming audio/illustrated content for children in Spanish, English, and Portuguese. No account, registration, or login is required to use the App. Some content is available for free; additional content requires an optional paid subscription (see Section 5).</p>
+
+<h3>3. Content and Intellectual Property</h3>
+<p>Stories, illustrations, narration, and music available in CoquiSleep are produced with the assistance of artificial intelligence tools and reviewed by our team before publication. All content is owned by or licensed to CoquiSleep and is provided for personal, non-commercial, in-app use only. You may not copy, redistribute, or sell App content.</p>
+
+<h3>4. No Medical or Therapeutic Claims</h3>
+<p>CoquiSleep is intended for entertainment and relaxation only. It is not a medical, clinical, or therapeutic product or service, makes no claims to treat, diagnose, or cure any condition (including sleep disorders), and should never replace professional medical advice.</p>
+
+<h3>5. Subscriptions and Auto-Renewal</h3>
+<p>CoquiSleep offers an optional auto-renewing monthly subscription priced at $4.99/month (price may vary by region and is shown at checkout) that unlocks additional content. Subscriptions are sold and billed entirely through the Apple App Store or Google Play Store, according to the payment method you choose.</p>
+<p><strong>Apple App Store subscribers — required disclosure:</strong></p>
+<p>"Payment will be charged to your Apple ID account at the confirmation of purchase. The subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period, and the cost of the renewal will be identified. Subscriptions and auto-renewal may be managed by the customer, and auto-renewal may be turned off by going to the customer's Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the customer purchases a subscription, where applicable." <em>(required disclosure derived from Schedule 2 to the Apple Developer Program License Agreement, App Review Guidelines §3.1.2)</em></p>
+<p>You can manage or cancel your subscription anytime in your Apple ID Account Settings (Settings > [your name] > Subscriptions) or, for Google Play, in the Google Play app (Menu > Subscriptions). Cancelling stops future renewals but does not refund the current billing period.</p>
+<p><strong>Refunds:</strong> All billing, refunds, and payment disputes are handled directly by Apple or Google under their own refund policies. CoquiSleep does not process payments or refunds directly and has no access to your payment information.</p>
+
+<h3>6. Privacy</h3>
+<p>Our <a href="/privacy.html">Privacy Policy</a> explains what information (if any) CoquiSleep collects and is incorporated into these Terms by reference.</p>
+
+<h3>7. Parental Guidance</h3>
+<p>CoquiSleep is designed for use by children under the supervision of a parent or guardian. Parents/guardians are responsible for deciding whether the App and its content are appropriate for their child.</p>
+
+<h3>8. Disclaimers</h3>
+<p>The App is provided "as is" and "as available," without warranties of any kind, to the fullest extent permitted by law.</p>
+
+<h3>9. Limitation of Liability</h3>
+<p>To the maximum extent permitted by applicable law, CoquiSleep and its operator will not be liable for any indirect, incidental, or consequential damages arising from use of the App.</p>
+
+<h3>10. Changes to These Terms</h3>
+<p>We may update these Terms from time to time. Updates will be posted in the App and/or at coquisleep.app with a new effective date. Continued use of the App after a change means you accept the updated Terms.</p>
+
+<h3>11. Contact</h3>
+<p>Questions about these Terms? Contact us at info@coquisleep.app.</p>
+
+<p><em>This document is a draft informed by the terms of comparable published apps and Apple's official subscription disclosure requirements; it is not a substitute for independent legal advice.</em></p>
+`,
+pt: `
+<h3>1. Aceitação dos Termos</h3>
+<p>Ao baixar, instalar ou usar o aplicativo CoquiSleep ("o App"), você concorda com estes Termos de Uso. Se você não concorda, não use o App. O CoquiSleep é operado por Geovane ("nós"). Se você é pai, mãe ou responsável, estes Termos também se aplicam ao uso do App pelo seu filho(a) sob sua supervisão.</p>
+
+<h3>2. O serviço</h3>
+<p>O CoquiSleep oferece histórias para dormir, canções de ninar e conteúdo de áudio e ilustrações relaxantes para crianças, em espanhol, inglês e português. Não é necessário criar conta, cadastro ou login para usar o App. Parte do conteúdo é gratuita; conteúdo adicional requer uma assinatura paga opcional (ver Seção 5).</p>
+
+<h3>3. Conteúdo e propriedade intelectual</h3>
+<p>As histórias, ilustrações, narrações e músicas disponíveis no CoquiSleep são produzidas com o auxílio de ferramentas de inteligência artificial e revisadas pela nossa equipe antes da publicação. Todo o conteúdo é de propriedade do CoquiSleep ou licenciado ao CoquiSleep, e é oferecido apenas para uso pessoal e não comercial dentro do App. Não é permitido copiar, redistribuir ou vender o conteúdo do App.</p>
+
+<h3>4. Sem alegações médicas ou terapêuticas</h3>
+<p>O CoquiSleep é destinado apenas a entretenimento e relaxamento. Não é um produto ou serviço médico, clínico ou terapêutico, não afirma tratar, diagnosticar ou curar qualquer condição (incluindo distúrbios do sono), e nunca deve substituir o aconselhamento médico profissional.</p>
+
+<h3>5. Assinaturas e renovação automática</h3>
+<p>O CoquiSleep oferece uma assinatura mensal opcional com renovação automática, no valor de $4,99/mês (o preço pode variar por região e é exibido antes da confirmação da compra), que desbloqueia conteúdo adicional. As assinaturas são vendidas e cobradas integralmente através da App Store da Apple ou da Google Play Store, de acordo com o método de pagamento escolhido.</p>
+<p><strong>Assinantes via App Store da Apple — divulgação obrigatória:</strong></p>
+<p>"O pagamento será cobrado na sua conta Apple ID na confirmação da compra. A assinatura é renovada automaticamente, a menos que a renovação automática seja desativada pelo menos 24 horas antes do fim do período atual. Sua conta será cobrada pela renovação dentro das 24 horas anteriores ao fim do período atual, e o custo da renovação será identificado. As assinaturas e a renovação automática podem ser gerenciadas pelo cliente, e a renovação automática pode ser desativada acessando as Configurações da Conta do cliente após a compra. Qualquer parte não utilizada de um período de teste gratuito, se oferecido, será perdida quando o cliente comprar uma assinatura, quando aplicável." <em>(tradução do texto oficial de divulgação da Apple, derivado do Schedule 2 do Apple Developer Program License Agreement; a versão em inglês da Apple é a referência vinculante)</em></p>
+<p>Você pode gerenciar ou cancelar sua assinatura a qualquer momento nas Configurações da sua conta Apple ID (Ajustes > [seu nome] > Assinaturas) ou, no Google Play, pelo app do Google Play (Menu > Assinaturas). Cancelar interrompe as renovações futuras, mas não reembolsa o período de cobrança atual.</p>
+<p><strong>Reembolsos:</strong> Toda cobrança, reembolso e disputa de pagamento é tratada diretamente pela Apple ou pelo Google, conforme suas próprias políticas de reembolso. O CoquiSleep não processa pagamentos nem reembolsos diretamente e não tem acesso às suas informações de pagamento.</p>
+
+<h3>6. Privacidade</h3>
+<p>Nossa <a href="/privacy.html">Política de Privacidade</a> explica quais informações (se houver) o CoquiSleep coleta, e é incorporada a estes Termos por referência.</p>
+
+<h3>7. Orientação parental</h3>
+<p>O CoquiSleep foi projetado para ser usado por crianças sob a supervisão de um pai, mãe ou responsável. Os pais/responsáveis são responsáveis por decidir se o App e seu conteúdo são apropriados para seu filho(a).</p>
+
+<h3>8. Isenção de garantias</h3>
+<p>O App é fornecido "como está" e "conforme disponibilidade", sem garantias de qualquer tipo, na máxima medida permitida por lei.</p>
+
+<h3>9. Limitação de responsabilidade</h3>
+<p>Na máxima medida permitida pela legislação aplicável, o CoquiSleep e seu operador não serão responsáveis por danos indiretos, incidentais ou consequenciais decorrentes do uso do App.</p>
+
+<h3>10. Alterações nestes Termos</h3>
+<p>Podemos atualizar estes Termos periodicamente. As atualizações serão publicadas no App e/ou em coquisleep.app com uma nova data de vigência. O uso contínuo do App após uma alteração significa que você aceita os Termos atualizados.</p>
+
+<h3>11. Contato</h3>
+<p>Dúvidas sobre estes Termos? Escreva para info@coquisleep.app.</p>
+
+<p><em>Este documento é um rascunho baseado nos termos de apps comparáveis já publicados e nos requisitos oficiais de divulgação de assinaturas da Apple; não substitui aconselhamento jurídico independente.</em></p>
+`
+  };
+
+  var lang = 'es';
+  try { lang = localStorage.getItem('coquisleep_lang') || 'es'; } catch(e){ lang = 'es'; }
+
+  function render(){
+    document.getElementById('content').innerHTML = BODY[lang];
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if (k === 'title') el.textContent = TITLES[lang];
+      if (k === 'updated') el.textContent = UPDATED[lang];
+      if (k === 'back') el.textContent = BACK[lang];
+    });
+    document.querySelectorAll('.lang-chip button').forEach(function(b){
+      b.classList.toggle('on', b.getAttribute('data-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+  }
+
+  document.querySelectorAll('.lang-chip button').forEach(function(b){
+    b.addEventListener('click', function(){
+      lang = b.getAttribute('data-lang');
+      try { localStorage.setItem('coquisleep_lang', lang); } catch(e){}
+      render();
+    });
+  });
+
+  render();
+})();
+</script>
+
+</body></html>

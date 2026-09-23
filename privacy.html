@@ -1,0 +1,257 @@
+<!doctype html><html lang="es"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>CoquiSleep — Política de Privacidad</title>
+<meta name="description" content="Política de Privacidad de CoquiSleep.">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-top:#1B1640; --bg-bottom:#0E0B22;
+    --surface:#241E44; --surface-raised:#2E2755; --line:rgba(255,255,255,.10);
+    --lavender:#9B8CFF; --turquoise:#5FD9C7; --moon-gold:#FFD98A;
+    --coral:#FF6F59; --coral-strong:#E5503B; --coral-hover:#CE402D;
+    --text-primary:#F3F1FB; --text-secondary:#B5AEDD; --text-muted:#9992C7;
+    --font-display:'Fredoka',system-ui,sans-serif; --font-body:'Nunito',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;}
+  body{
+    background:linear-gradient(180deg,var(--bg-top) 0%,var(--bg-bottom) 55%,#0A0819 100%) fixed;
+    color:var(--text-primary); font-family:var(--font-body); padding-inline:20px; font-size:15px; line-height:1.65;
+  }
+  h1,h2,h3{font-family:var(--font-display); margin:0;}
+  a{color:var(--turquoise);}
+  .wrap{max-width:720px; margin:0 auto; padding-block:32px 60px;}
+  header{display:flex; align-items:center; justify-content:space-between; padding-block:10px 30px;}
+  .logo{display:flex; align-items:center; gap:10px; text-decoration:none;}
+  .logo svg{width:30px; height:30px;}
+  .logo span{font-family:var(--font-display); font-weight:600; font-size:17px; color:var(--text-primary);}
+  .logo .co{color:var(--coral);} .logo .sl{color:var(--lavender);}
+  .lang-chip{display:flex; gap:6px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:5px;}
+  .lang-chip button{all:unset; cursor:pointer; padding:5px 12px; border-radius:999px; color:var(--text-muted); font-family:inherit; font-size:12px; font-weight:800;}
+  .lang-chip button.on{background:var(--coral-strong); color:#fff;}
+  h1.doc-title{font-size:clamp(26px,4vw,36px); font-weight:600;}
+  .updated{color:var(--text-muted); font-size:13px; margin-top:8px;}
+  .content{margin-top:36px;}
+  .content h3{font-size:16.5px; font-weight:700; color:var(--text-primary); margin-top:30px; margin-bottom:8px;}
+  .content h3:first-child{margin-top:0;}
+  .content p{color:var(--text-secondary); margin:0 0 12px;}
+  .content ul{color:var(--text-secondary); margin:0 0 12px; padding-left:20px;}
+  .content li{margin-bottom:4px;}
+  .content em{color:var(--text-muted); font-size:13px; font-style:normal;}
+  .back-link{display:inline-block; margin-top:44px; font-size:13px; color:var(--text-muted); text-decoration:none;}
+  .back-link:hover{color:var(--text-secondary);}
+</style>
+</head><body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <mask id="crescent-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+      <rect width="120" height="120" fill="black"/>
+      <circle cx="88" cy="38" r="26" fill="white"/>
+      <circle cx="77" cy="29" r="24" fill="black"/>
+    </mask>
+  </defs>
+  <g id="mp">
+    <circle cx="88" cy="38" r="26" fill="#FFD98A" mask="url(#crescent-mask)"/>
+    <ellipse cx="46" cy="86" rx="10" ry="6" fill="#219A66"/>
+    <ellipse cx="76" cy="86" rx="10" ry="6" fill="#219A66"/>
+    <ellipse cx="60" cy="72" rx="32" ry="26" fill="#3ECF8E"/>
+    <ellipse cx="60" cy="86" rx="18" ry="10" fill="#2FB77C"/>
+    <circle cx="45" cy="52" r="13" fill="#3ECF8E"/><circle cx="75" cy="52" r="13" fill="#3ECF8E"/>
+    <circle cx="45" cy="50" r="8.5" fill="#F3F1FB"/><circle cx="75" cy="50" r="8.5" fill="#F3F1FB"/>
+    <circle cx="46.5" cy="51" r="4.2" fill="#1B1640"/><circle cx="76.5" cy="51" r="4.2" fill="#1B1640"/>
+    <circle cx="48" cy="49" r="1.4" fill="#fff"/><circle cx="78" cy="49" r="1.4" fill="#fff"/>
+  </g>
+</svg>
+
+<div class="wrap">
+  <header>
+    <a class="logo" href="/">
+      <svg viewBox="0 0 120 120"><use href="#mp"/></svg>
+      <span><span class="co">Coqui</span><span class="sl">Sleep</span></span>
+    </a>
+    <div class="lang-chip">
+      <button data-lang="es" class="on">ES</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="pt">PT</button>
+    </div>
+  </header>
+
+  <h1 class="doc-title" data-i18n="title"></h1>
+  <p class="updated" data-i18n="updated"></p>
+  <div class="content" id="content"></div>
+  <a class="back-link" href="/" data-i18n="back"></a>
+</div>
+
+<script>
+(function(){
+  var TITLES = {
+    es: 'Política de Privacidad', en: 'Privacy Policy', pt: 'Política de Privacidade'
+  };
+  var UPDATED = {
+    es: 'Última actualización: 22 de septiembre de 2026.',
+    en: 'Last updated: September 22, 2026.',
+    pt: 'Última atualização: 22 de setembro de 2026.'
+  };
+  var BACK = { es: '← Volver a CoquiSleep', en: '← Back to CoquiSleep', pt: '← Voltar para o CoquiSleep' };
+
+  var BODY = {
+es: `
+<h3>1. Resumen</h3>
+<p>CoquiSleep ("CoquiSleep", "nosotros") es una aplicación móvil que ofrece cuentos para dormir, canciones de cuna y contenido de audio relajante para niños, creada para familias en español, inglés y portugués. Esta Política de Privacidad explica qué información recopila CoquiSleep (y, más importante aún, qué información NO recopila), cómo se usa y cuáles son tus derechos. CoquiSleep es operada por Geovane, un desarrollador independiente. Si tienes preguntas, escríbenos a info@coquisleep.app.</p>
+
+<h3>2. No se requiere cuenta</h3>
+<p>CoquiSleep no requiere que tú o tu hijo/a creen una cuenta, se registren, inicien sesión ni proporcionen nombre de usuario, contraseña o perfil para usar la app. Puedes explorar y escuchar todo el contenido de la app sin darnos ningún dato personal.</p>
+
+<h3>3. Información que recopilamos</h3>
+<p>A la fecha de esta Política, CoquiSleep no recopila, almacena ni transmite ningún dato personal de niños ni de adultos a través de la app. No pedimos nombres, fechas de nacimiento, fotos, ubicación, contactos ni ningún otro identificador personal. Las compras se procesan por completo a través de Apple (App Store) o Google (Google Play) — ver Sección 6.</p>
+
+<h3>4. Privacidad infantil y COPPA</h3>
+<p>CoquiSleep está diseñada para ser segura para niños y cumple con la Ley de Protección de la Privacidad Infantil en Línea de EE. UU. (COPPA, por sus siglas en inglés). No recopilamos a sabiendas información personal de niños menores de 13 años y, dado que la app no requiere cuenta ni registro, no se recopila este tipo de información durante el uso normal de la app. Si en algún momento identificamos que un niño nos proporcionó datos personales por error (por ejemplo, a través de un correo de soporte), los eliminaremos de inmediato.</p>
+<p>Los padres o tutores que crean que su hijo/a nos proporcionó información personal pueden contactarnos en info@coquisleep.app para solicitar la revisión o eliminación de esa información.</p>
+
+<h3>5. Analítica futura</h3>
+<p>Actualmente CoquiSleep no utiliza ningún servicio de analítica, publicidad ni rastreo. Si en el futuro incorporamos analítica de uso para mejorar la app, usaremos únicamente un proveedor con configuraciones compatibles con COPPA (sin publicidad conductual, sin rastreo entre apps, sin recopilación de identificadores persistentes para publicidad dirigida), y actualizaremos esta Política antes de activarla.</p>
+
+<h3>6. Compras y suscripciones</h3>
+<p>CoquiSleep ofrece una suscripción mensual opcional y de renovación automática ($4.99/mes) que desbloquea contenido adicional. Todas las compras y suscripciones se procesan íntegramente a través de Apple (App Store) o Google (Google Play Store). CoquiSleep nunca ve, recibe ni almacena los datos de tu tarjeta de pago, dirección de facturación ni ningún otro dato de pago — esa información la maneja exclusivamente Apple o Google, bajo sus propias políticas de privacidad:</p>
+<ul>
+<li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+<li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+
+<h3>7. Contenido generado con IA</h3>
+<p>Los cuentos, ilustraciones, narraciones y música de CoquiSleep se crean con la ayuda de herramientas de inteligencia artificial y son revisados por nuestro equipo antes de publicarse. El uso de estas herramientas no implica recopilar información personal tuya ni de tu hijo/a.</p>
+
+<h3>8. Sin alegaciones médicas o terapéuticas</h3>
+<p>CoquiSleep es una app de entretenimiento y relajación. No es un dispositivo médico ni un servicio médico, clínico o terapéutico, y no diagnostica, trata ni ofrece consejos sobre ninguna condición de salud, incluyendo trastornos del sueño. Nada en la app debe tomarse como consejo médico.</p>
+
+<h3>9. Seguridad de los datos</h3>
+<p>Como CoquiSleep no recopila datos personales, no existe riesgo de exposición de datos personales durante el uso normal de la app. Si esto cambiara en el futuro (ver Sección 5), describiremos en ese momento las medidas de seguridad correspondientes.</p>
+
+<h3>10. Cambios a esta Política</h3>
+<p>Podemos actualizar esta Política de Privacidad periódicamente, especialmente antes de introducir cualquier nueva recopilación de datos (ver Sección 5). Publicaremos la versión actualizada en la app y/o en coquisleep.app con una nueva fecha de vigencia. El uso continuado de la app después de una actualización implica que aceptas la Política revisada.</p>
+
+<h3>11. Contacto</h3>
+<p>¿Preguntas sobre esta Política de Privacidad? Escríbenos a info@coquisleep.app.</p>
+
+<p><em>Este documento es un borrador basado en las políticas de privacidad publicadas de apps infantiles comparables y en las guías de la FTC/COPPA; no sustituye el asesoramiento legal independiente.</em></p>
+`,
+en: `
+<h3>1. Overview</h3>
+<p>CoquiSleep ("CoquiSleep", "we", "us") is a mobile app that offers bedtime stories, lullabies, and calming audio content for children, created for families in Spanish, English, and Portuguese. This Privacy Policy explains what information CoquiSleep collects (and, just as importantly, what it does not collect), how it is used, and your rights. CoquiSleep is operated by Geovane, an independent developer. If you have questions, contact us at info@coquisleep.app.</p>
+
+<h3>2. No Account Required</h3>
+<p>CoquiSleep does not require you or your child to create an account, register, log in, or provide a username, password, or profile to use the app. You can browse and listen to all content the app offers without giving us any personal information.</p>
+
+<h3>3. Information We Collect</h3>
+<p>As of the date of this Policy, CoquiSleep does not collect, store, or transmit any personal information from children or adults through the app. We do not ask for names, birthdates, photos, location, contacts, or any other personal identifier. Purchases are handled entirely by Apple (App Store) or Google (Google Play) — see Section 6.</p>
+
+<h3>4. Children's Privacy and COPPA</h3>
+<p>CoquiSleep is designed to be safe for children and complies with the Children's Online Privacy Protection Act (COPPA). We do not knowingly collect any personal information from children under 13, and because the app requires no account or sign-up, no such information is collected through normal use of the app. If we ever believe a child has provided personal information to us in error (for example, through a support email), we will delete it promptly.</p>
+<p>Parents and guardians who believe their child has provided us with personal information may contact us at info@coquisleep.app to request review or deletion of that information.</p>
+
+<h3>5. Future Analytics</h3>
+<p>CoquiSleep does not currently use any analytics, advertising, or tracking service. If we introduce usage analytics in the future to improve the app, we will only use a provider that offers COPPA-compliant, child-directed configurations (no behavioral advertising, no cross-app tracking, no collection of persistent identifiers used for ad targeting), and we will update this Privacy Policy before activating it.</p>
+
+<h3>6. Purchases and Subscriptions</h3>
+<p>CoquiSleep offers an optional monthly subscription ($4.99/month, auto-renewing) that unlocks additional content. All purchases and subscriptions are processed entirely by Apple (App Store) or Google (Google Play Store). CoquiSleep never sees, receives, or stores your payment card information, billing address, or any other payment data — that information is handled exclusively by Apple's and Google's own systems under their own privacy policies:</p>
+<ul>
+<li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+<li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+
+<h3>7. AI-Generated Content</h3>
+<p>Stories, illustrations, narration, and music in CoquiSleep are created with the help of artificial intelligence tools and reviewed by our team before publication. Using these tools does not involve collecting personal information about you or your child.</p>
+
+<h3>8. No Medical or Therapeutic Claims</h3>
+<p>CoquiSleep is an entertainment and relaxation app. It is not a medical device or a medical, clinical, or therapeutic service, and it does not diagnose, treat, or provide advice about any health condition, including sleep disorders. Nothing in the app should be treated as medical advice.</p>
+
+<h3>9. Data Security</h3>
+<p>Because CoquiSleep does not collect personal data, there is no personal data at risk during normal use of the app. Should this change in the future (see Section 5), we will describe the safeguards in place at that time.</p>
+
+<h3>10. Changes to This Policy</h3>
+<p>We may update this Privacy Policy from time to time, especially before introducing any new data collection (see Section 5). We will post the updated version in the app and/or on coquisleep.app with a new effective date. Continued use of the app after an update means you accept the revised Policy.</p>
+
+<h3>11. Contact Us</h3>
+<p>Questions about this Privacy Policy? Contact us at info@coquisleep.app.</p>
+
+<p><em>This document is a draft informed by the published privacy policies of comparable children's apps and by FTC/COPPA guidance; it is not a substitute for independent legal advice.</em></p>
+`,
+pt: `
+<h3>1. Visão geral</h3>
+<p>CoquiSleep ("CoquiSleep", "nós") é um aplicativo móvel que oferece histórias para dormir, canções de ninar e conteúdo de áudio relaxante para crianças, criado para famílias em espanhol, inglês e português. Esta Política de Privacidade explica quais informações o CoquiSleep coleta (e, mais importante, quais NÃO coleta), como são usadas e quais são os seus direitos. O CoquiSleep é operado por Geovane, desenvolvedor independente. Em caso de dúvidas, escreva para info@coquisleep.app.</p>
+
+<h3>2. Não é necessário criar conta</h3>
+<p>O CoquiSleep não exige que você ou seu filho(a) criem uma conta, façam cadastro, login ou forneçam nome de usuário, senha ou perfil para usar o app. Você pode navegar e ouvir todo o conteúdo do app sem nos fornecer nenhum dado pessoal.</p>
+
+<h3>3. Informações que coletamos</h3>
+<p>Na data desta Política, o CoquiSleep não coleta, armazena nem transmite nenhum dado pessoal de crianças ou adultos através do app. Não pedimos nome, data de nascimento, fotos, localização, contatos ou qualquer outro identificador pessoal. As compras são processadas integralmente pela Apple (App Store) ou pelo Google (Google Play) — ver Seção 6.</p>
+
+<h3>4. Privacidade infantil e COPPA</h3>
+<p>O CoquiSleep foi projetado para ser seguro para crianças e segue a Children's Online Privacy Protection Act (COPPA), lei americana de proteção à privacidade infantil online. Não coletamos intencionalmente informações pessoais de crianças menores de 13 anos e, como o app não exige conta nem cadastro, nenhuma informação desse tipo é coletada durante o uso normal do app. Se em algum momento identificarmos que uma criança nos forneceu dados pessoais por engano (por exemplo, em um e-mail de suporte), esses dados serão excluídos prontamente.</p>
+<p>Pais ou responsáveis que acreditem que seu filho(a) nos forneceu informações pessoais podem entrar em contato em info@coquisleep.app para solicitar revisão ou exclusão dessas informações.</p>
+
+<h3>5. Analytics no futuro</h3>
+<p>Atualmente o CoquiSleep não utiliza nenhum serviço de analytics, publicidade ou rastreamento. Caso no futuro adotemos analytics de uso para melhorar o app, usaremos apenas um provedor com configurações compatíveis com a COPPA (sem publicidade comportamental, sem rastreamento entre apps, sem coleta de identificadores persistentes para publicidade direcionada), e esta Política será atualizada antes da ativação.</p>
+
+<h3>6. Compras e assinaturas</h3>
+<p>O CoquiSleep oferece uma assinatura mensal opcional, com renovação automática ($4,99/mês), que desbloqueia conteúdo adicional. Todas as compras e assinaturas são processadas integralmente pela Apple (App Store) ou pelo Google (Google Play Store). O CoquiSleep nunca vê, recebe ou armazena os dados do seu cartão de pagamento, endereço de cobrança ou qualquer outro dado de pagamento — essas informações são tratadas exclusivamente pela Apple ou pelo Google, sob suas próprias políticas de privacidade:</p>
+<ul>
+<li>Apple: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+<li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+
+<h3>7. Conteúdo gerado com IA</h3>
+<p>As histórias, ilustrações, narrações e músicas do CoquiSleep são criadas com o auxílio de ferramentas de inteligência artificial e revisadas pela nossa equipe antes da publicação. O uso dessas ferramentas não envolve a coleta de informações pessoais suas ou do seu filho(a).</p>
+
+<h3>8. Sem alegações médicas ou terapêuticas</h3>
+<p>O CoquiSleep é um app de entretenimento e relaxamento. Não é um dispositivo médico nem um serviço médico, clínico ou terapêutico, e não diagnostica, trata nem oferece aconselhamento sobre qualquer condição de saúde, incluindo distúrbios do sono. Nada no app deve ser interpretado como aconselhamento médico.</p>
+
+<h3>9. Segurança dos dados</h3>
+<p>Como o CoquiSleep não coleta dados pessoais, não há dados pessoais em risco durante o uso normal do app. Caso isso mude no futuro (ver Seção 5), descreveremos as medidas de segurança adotadas naquele momento.</p>
+
+<h3>10. Alterações nesta Política</h3>
+<p>Podemos atualizar esta Política de Privacidade periodicamente, especialmente antes de introduzir qualquer nova coleta de dados (ver Seção 5). A versão atualizada será publicada no app e/ou em coquisleep.app com uma nova data de vigência. O uso contínuo do app após uma atualização significa que você aceita a Política revisada.</p>
+
+<h3>11. Contato</h3>
+<p>Dúvidas sobre esta Política de Privacidade? Escreva para info@coquisleep.app.</p>
+
+<p><em>Este documento é um rascunho baseado nas políticas de privacidade publicadas de apps infantis comparáveis e nas diretrizes da FTC/COPPA; não substitui aconselhamento jurídico independente.</em></p>
+`
+  };
+
+  var lang = 'es';
+  try { lang = localStorage.getItem('coquisleep_lang') || 'es'; } catch(e){ lang = 'es'; }
+
+  function render(){
+    document.getElementById('content').innerHTML = BODY[lang];
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if (k === 'title') el.textContent = TITLES[lang];
+      if (k === 'updated') el.textContent = UPDATED[lang];
+      if (k === 'back') el.textContent = BACK[lang];
+    });
+    document.querySelectorAll('.lang-chip button').forEach(function(b){
+      b.classList.toggle('on', b.getAttribute('data-lang') === lang);
+    });
+    document.documentElement.setAttribute('lang', lang);
+  }
+
+  document.querySelectorAll('.lang-chip button').forEach(function(b){
+    b.addEventListener('click', function(){
+      lang = b.getAttribute('data-lang');
+      try { localStorage.setItem('coquisleep_lang', lang); } catch(e){}
+      render();
+    });
+  });
+
+  render();
+})();
+</script>
+
+</body></html>
