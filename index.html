@@ -7,7 +7,7 @@
 <link rel="canonical" href="https://coquisleep.app/">
 <meta name="theme-color" content="#1B1640">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MobileApplication","name":"CoquiSleep","description":"Cuentos narrados y canciones de cuna en español, inglés y portugués. Sin cuenta, sin contraseña.","url":"https://coquisleep.app/","operatingSystem":"Android, iOS","applicationCategory":"LifestyleApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+{"@context":"https://schema.org","@type":"MobileApplication","name":"CoquiSleep","description":"Cuentos narrados y canciones de cuna en español, inglés y portugués. Sin cuenta, sin contraseña.","url":"https://coquisleep.app/","operatingSystem":"Android, iOS","applicationCategory":"LifestyleApplication","installUrl":"https://play.google.com/store/apps/details?id=com.coquisleep.coquisleep_app","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
@@ -85,7 +85,10 @@
   .store-btn{display:flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:12px 20px; color:var(--text-primary); text-decoration:none; font-weight:700; font-size:14px; min-height:44px; position:relative; opacity:.4; cursor:default;}
   .store-btn .small{display:block; font-size:10px; color:var(--text-muted); font-weight:600;}
   .store-btn svg{width:20px;height:20px;flex:none;}
+  .store-btn.live{opacity:1; cursor:pointer; border-color:var(--turquoise); transition:background .15s;}
+  .store-btn.live:hover{background:var(--surface-raised);}
   .soon-tag{background:var(--moon-gold); color:#3A2A00; font-size:9.5px; font-weight:800; letter-spacing:.03em; padding:4px 10px; border-radius:999px; align-self:center;}
+  .soon-tag.live-tag{background:var(--turquoise); color:#04302B;}
   .trust-row{display:flex; gap:22px; flex-wrap:wrap; margin-top:24px; font-size:13px; color:var(--text-muted);}
   .trust-row span{display:flex; align-items:center; gap:6px;}
   .trust-row svg{width:15px;height:15px; color:var(--turquoise);}
@@ -461,9 +464,10 @@
         <h1 data-i18n-html="h1"></h1>
         <p class="sub" data-i18n="sub"></p>
         <div class="cta-row">
+          <span class="soon-tag live-tag" data-i18n="liveTag"></span>
+          <a class="store-btn live" href="https://play.google.com/store/apps/details?id=com.coquisleep.coquisleep_app" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.6c-.4.4-.6.9-.6 1.6v15.6c0 .7.2 1.2.6 1.6l8.8-9.2-8.8-9.2Z"/><path d="M15.4 15.3 4.4 21.5l8-8.7 3 2.5Z"/><path d="M15.4 8.7 4.4 2.5l8 8.7 3-2.5Z"/></svg><span><span class="small" data-i18n="storeGoogle"></span>Google Play</span></a>
+          <a class="store-btn" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.3c0-2.9 2.4-4.3 2.5-4.4-1.4-2-3.5-2.3-4.2-2.3-1.8-.2-3.5 1-4.4 1-.9 0-2.3-1-3.8-1-2 0-3.8 1.2-4.8 2.9-2 3.6-.5 8.9 1.5 11.8 1 1.4 2.1 3 3.6 3 1.5-.1 2-.9 3.8-.9s2.3.9 3.8.9c1.6 0 2.6-1.4 3.6-2.9 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3.1-1.2-3.2-4.8Z"/><path d="M14.8 3.5c.8-1 1.4-2.3 1.2-3.5-1.2 0-2.6.8-3.4 1.8-.7.9-1.4 2.2-1.2 3.5 1.3.1 2.6-.7 3.4-1.8Z"/></svg><span><span class="small" data-i18n="storeApple"></span>App Store</span></a>
           <span class="soon-tag" data-i18n="soon"></span>
-          <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.3c0-2.9 2.4-4.3 2.5-4.4-1.4-2-3.5-2.3-4.2-2.3-1.8-.2-3.5 1-4.4 1-.9 0-2.3-1-3.8-1-2 0-3.8 1.2-4.8 2.9-2 3.6-.5 8.9 1.5 11.8 1 1.4 2.1 3 3.6 3 1.5-.1 2-.9 3.8-.9s2.3.9 3.8.9c1.6 0 2.6-1.4 3.6-2.9 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3.1-1.2-3.2-4.8Z"/><path d="M14.8 3.5c.8-1 1.4-2.3 1.2-3.5-1.2 0-2.6.8-3.4 1.8-.7.9-1.4 2.2-1.2 3.5 1.3.1 2.6-.7 3.4-1.8Z"/></svg><span><span class="small" data-i18n="storeApple"></span>App Store</span></a>
-          <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.6c-.4.4-.6.9-.6 1.6v15.6c0 .7.2 1.2.6 1.6l8.8-9.2-8.8-9.2Z"/><path d="M15.4 15.3 4.4 21.5l8-8.7 3 2.5Z"/><path d="M15.4 8.7 4.4 2.5l8 8.7 3-2.5Z"/></svg><span><span class="small" data-i18n="storeGoogle"></span>Google Play</span></a>
         </div>
         <div class="trust-row">
           <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="trust1"></span></span>
@@ -726,9 +730,10 @@
     <h2 data-i18n="ctaH2"></h2>
     <p class="lede" data-i18n="ctaLede"></p>
     <div class="cta-row">
+      <span class="soon-tag live-tag" data-i18n="liveTag"></span>
+      <a class="store-btn live" href="https://play.google.com/store/apps/details?id=com.coquisleep.coquisleep_app" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.6c-.4.4-.6.9-.6 1.6v15.6c0 .7.2 1.2.6 1.6l8.8-9.2-8.8-9.2Z"/><path d="M15.4 15.3 4.4 21.5l8-8.7 3 2.5Z"/><path d="M15.4 8.7 4.4 2.5l8 8.7 3-2.5Z"/></svg><span><span class="small" data-i18n="storeGoogle"></span>Google Play</span></a>
+      <a class="store-btn" aria-disabled="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.3c0-2.9 2.4-4.3 2.5-4.4-1.4-2-3.5-2.3-4.2-2.3-1.8-.2-3.5 1-4.4 1-.9 0-2.3-1-3.8-1-2 0-3.8 1.2-4.8 2.9-2 3.6-.5 8.9 1.5 11.8 1 1.4 2.1 3 3.6 3 1.5-.1 2-.9 3.8-.9s2.3.9 3.8.9c1.6 0 2.6-1.4 3.6-2.9 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3.1-1.2-3.2-4.8Z"/><path d="M14.8 3.5c.8-1 1.4-2.3 1.2-3.5-1.2 0-2.6.8-3.4 1.8-.7.9-1.4 2.2-1.2 3.5 1.3.1 2.6-.7 3.4-1.8Z"/></svg><span><span class="small" data-i18n="storeApple"></span>App Store</span></a>
       <span class="soon-tag" data-i18n="soon"></span>
-      <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.3c0-2.9 2.4-4.3 2.5-4.4-1.4-2-3.5-2.3-4.2-2.3-1.8-.2-3.5 1-4.4 1-.9 0-2.3-1-3.8-1-2 0-3.8 1.2-4.8 2.9-2 3.6-.5 8.9 1.5 11.8 1 1.4 2.1 3 3.6 3 1.5-.1 2-.9 3.8-.9s2.3.9 3.8.9c1.6 0 2.6-1.4 3.6-2.9 1.1-1.6 1.6-3.2 1.6-3.3-.1 0-3.1-1.2-3.2-4.8Z"/><path d="M14.8 3.5c.8-1 1.4-2.3 1.2-3.5-1.2 0-2.6.8-3.4 1.8-.7.9-1.4 2.2-1.2 3.5 1.3.1 2.6-.7 3.4-1.8Z"/></svg><span><span class="small" data-i18n="storeApple"></span>App Store</span></a>
-      <a class="store-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.6c-.4.4-.6.9-.6 1.6v15.6c0 .7.2 1.2.6 1.6l8.8-9.2-8.8-9.2Z"/><path d="M15.4 15.3 4.4 21.5l8-8.7 3 2.5Z"/><path d="M15.4 8.7 4.4 2.5l8 8.7 3-2.5Z"/></svg><span><span class="small" data-i18n="storeGoogle"></span>Google Play</span></a>
     </div>
   </section>
 
@@ -775,7 +780,8 @@
       badge: 'Sin crear cuenta',
       h1: 'El coquí que le <span class="accent">canta</span> a tus nenes hasta dormirlos',
       sub: 'Cuentos narrados y canciones de cuna en español e inglés, inspirados en la ranita que lleva siglos arrullando a Puerto Rico cada noche. Le das play y ya: no hace falta cuenta ni contraseña.',
-      soon: 'Muy pronto',
+      liveTag: 'Ya disponible',
+      soon: 'App Store: muy pronto',
       storeApple: 'Descárgala en',
       storeGoogle: 'Disponible en',
       trust1: 'Empieza gratis', trust2: 'Español, inglés y portugués', trust3: 'Hecha para la hora de dormir',
@@ -803,9 +809,9 @@
       coquiP1: 'El <strong>coquí</strong> es una rana bien chiquita, del tamaño de una moneda, que solo se encuentra en Puerto Rico. Nadie que haya pasado una noche en la isla se olvida de su canto: "co-quí, co-quí", sonando desde el monte hasta que amanece. Generaciones enteras de puertorriqueños se han dormido con ese sonido, estén en San Juan o en el Bronx.',
       coquiP2: 'CoquiSleep agarra ese mismo papel, una voz constante en la oscuridad, y la convierte en cuentos y canciones. Es para las familias de la diáspora que quieren que sus nenes crezcan hablando español e inglés sin perder ese sonido de fondo que se trajeron de la isla.',
       coquiQuote: '"Co-quí, co-quí." La misma rana que ha arrullado a una isla entera ahora arrulla tu casa también.',
-      ctaEyebrow: 'Ya casi',
+      ctaEyebrow: 'Ya está disponible',
       ctaH2: 'Tu primer cuento te está esperando',
-      ctaLede: 'CoquiSleep ya está lista. Llega muy pronto a la App Store — sin cuenta, sin tarjeta, sin vueltas.',
+      ctaLede: 'CoquiSleep ya está en Google Play — sin cuenta, sin tarjeta, sin vueltas. La versión para iPhone llega muy pronto.',
       footerNote: '© 2026 CoquiSleep. Cuentos e ilustraciones pensados para la hora de dormir.',
       demoEyebrow: 'Escúchalo tú mismo',
       demoH2: 'Dale play ahora mismo, gratis',
@@ -835,7 +841,8 @@
       badge: 'No account needed',
       h1: 'The little coquí who <span class="accent">sings</span> your kids to sleep',
       sub: "Narrated stories and lullabies in Spanish and English, inspired by the tiny frog that's been lulling Puerto Rico to sleep for centuries. Hit play and that's it — no account, no password to remember.",
-      soon: 'Coming soon',
+      liveTag: 'Out now',
+      soon: 'App Store: coming soon',
       storeApple: 'Download on the',
       storeGoogle: 'Get it on',
       trust1: 'Free to start', trust2: 'Spanish, English & Portuguese', trust3: 'Made for bedtime',
@@ -863,9 +870,9 @@
       coquiP1: "The <strong>coquí</strong> is a tiny frog, small enough to sit on a coin, found only in Puerto Rico. Nobody who's spent a night on the island forgets its call — 'co-quí, co-quí,' rolling down from the hills until sunrise. Generations of Puerto Ricans have fallen asleep to that sound, whether they were in San Juan or the Bronx.",
       coquiP2: 'CoquiSleep picks up that same job, a steady voice in the dark, and turns it into stories and lullabies, for diaspora families who want their kids growing up speaking Spanish and English without losing that sound they carried over from the island.',
       coquiQuote: '"Co-quí, co-quí." The same little frog that lulls a whole island to sleep now lulls your house too.',
-      ctaEyebrow: 'Almost there',
+      ctaEyebrow: 'Out now',
       ctaH2: 'Your first story is waiting',
-      ctaLede: "CoquiSleep is ready. Coming very soon to the App Store — no account, no card, no runaround.",
+      ctaLede: "CoquiSleep is on Google Play now — no account, no card, no runaround. The iPhone version is coming very soon.",
       footerNote: '© 2026 CoquiSleep. Stories and illustrations made for bedtime.',
       demoEyebrow: 'Try it yourself',
       demoH2: 'Press play right now, free',
@@ -888,7 +895,8 @@
       badge: 'Sem cadastro',
       h1: 'O coquizinho que <span class="accent">canta</span> pros seus filhos até eles pegarem no sono',
       sub: 'Histórias narradas e canções de ninar em português, espanhol e inglês, inspiradas na ranzinha que embala Porto Rico há séculos. Aperta o play e pronto: sem cadastro, sem senha pra lembrar.',
-      soon: 'Em breve',
+      liveTag: 'Já disponível',
+      soon: 'App Store: em breve',
       storeApple: 'Baixe na', storeGoogle: 'Disponível no',
       trust1: 'Começa de graça', trust2: 'Português, espanhol e inglês', trust3: 'Feito pra hora de dormir',
       screensEyebrow: 'O app por dentro',
@@ -915,9 +923,9 @@
       coquiP1: 'O <strong>coquizinho</strong> é uma ranzinha do tamanho de uma moeda, que só existe em Porto Rico. Quem já passou uma noite na ilha não esquece o canto dele: "co-quí, co-quí", descendo do morro até o amanhecer. Gerações inteiras de porto-riquenhos dormiram com esse som, estando em San Juan ou no Bronx.',
       coquiP2: 'O CoquiSleep pega esse mesmo papel, uma voz constante na escuridão, e transforma em histórias e canções de ninar, pras famílias da diáspora que querem que os filhos cresçam falando espanhol e inglês sem perder esse som que trouxeram da ilha.',
       coquiQuote: '"Co-quí, co-quí." A mesma ranzinha que embala uma ilha inteira agora embala sua casa também.',
-      ctaEyebrow: 'Já já',
+      ctaEyebrow: 'Já disponível',
       ctaH2: 'Sua primeira história está esperando',
-      ctaLede: 'O CoquiSleep já está pronto. Chega muito em breve na App Store — sem cadastro, sem cartão, sem enrolação.',
+      ctaLede: 'O CoquiSleep já está no Google Play — sem cadastro, sem cartão, sem enrolação. A versão para iPhone chega muito em breve.',
       footerNote: '© 2026 CoquiSleep. Histórias e ilustrações pensadas pra hora de dormir.',
       demoEyebrow: 'Escute você mesmo',
       demoH2: 'Aperta o play agora, de graça',
